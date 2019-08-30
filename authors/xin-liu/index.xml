@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>**Xin Liu** | XIN LIU</title>
+    <link>/authors/xin-liu/</link>
+      <atom:link href="/authors/xin-liu/index.xml" rel="self" type="application/rss+xml" />
+    <description>**Xin Liu**</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 - 2019 Xin Liu</copyright><lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>**Xin Liu**</title>
+      <link>/authors/xin-liu/</link>
+    </image>
+    
+    <item>
+      <title>A general view for network embedding as matrix factorization</title>
+      <link>/publication/liu2019netembgrabetta/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/liu2019netembgrabetta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning community structure with variational autoencoder</title>
+      <link>/publication/choong2018communityvae/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/choong2018communityvae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting network communities beyond assortativity-related attributes</title>
+      <link>/publication/liucommunitybeyondattribute/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/liucommunitybeyondattribute/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Advanced modularity-specialized label propagation algorithm for detecting communities in networks</title>
+      <link>/publication/liulpamplus/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/liulpamplus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Community detection in large-scale bipartite networks</title>
+      <link>/publication/liucommunitydetectionlargebipartitenetworkwi/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/liucommunitydetectionlargebipartitenetworkwi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effective algorithm for detecting community structure in complex networks based on GA and clustering</title>
+      <link>/publication/liu2007communitydetectga/</link>
+      <pubDate>Tue, 01 May 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/liu2007communitydetectga/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

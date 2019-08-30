@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zhiwei Tao | XIN LIU</title>
+    <link>/authors/zhiwei-tao/</link>
+      <atom:link href="/authors/zhiwei-tao/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zhiwei Tao</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 - 2019 Xin Liu</copyright><lastBuildDate>Tue, 01 May 2007 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Zhiwei Tao</title>
+      <link>/authors/zhiwei-tao/</link>
+    </image>
+    
+    <item>
+      <title>Effective algorithm for detecting community structure in complex networks based on GA and clustering</title>
+      <link>/publication/liu2007communitydetectga/</link>
+      <pubDate>Tue, 01 May 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/liu2007communitydetectga/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

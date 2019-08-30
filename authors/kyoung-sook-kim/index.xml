@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kyoung-Sook Kim | XIN LIU</title>
+    <link>/authors/kyoung-sook-kim/</link>
+      <atom:link href="/authors/kyoung-sook-kim/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kyoung-Sook Kim</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 - 2019 Xin Liu</copyright><lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Kyoung-Sook Kim</title>
+      <link>/authors/kyoung-sook-kim/</link>
+    </image>
+    
+    <item>
+      <title>A general view for network embedding as matrix factorization</title>
+      <link>/publication/liu2019netembgrabetta/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/liu2019netembgrabetta/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
