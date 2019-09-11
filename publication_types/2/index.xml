@@ -17,7 +17,10 @@
       <link>/publication/liucommunitybeyondattribute/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       <guid>/publication/liucommunitybeyondattribute/</guid>
-      <description></description>
+      <description>&lt;!--- use this for adding a citation link
+links = [{name = &#34;Citations: 19&#34;, url = &#34;https://scholar.google.co.jp/scholar?oi=bibs&amp;hl=en&amp;cites=4505519699918526241,13273093136435281277,15061097326386870189&#34;}]
+--&gt;
+</description>
     </item>
     
     <item>

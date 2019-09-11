@@ -17,7 +17,10 @@
       <link>/publication/choong2018communityvae/</link>
       <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
       <guid>/publication/choong2018communityvae/</guid>
-      <description></description>
+      <description>&lt;!--- use this for adding a citation link
+links = [{name = &#34;Citations: 3&#34;, url = &#34;https://scholar.google.co.jp/scholar?oi=bibs&amp;hl=en&amp;cites=4822014597931765734&#34;}]
+--&gt;
+</description>
     </item>
     
   </channel>

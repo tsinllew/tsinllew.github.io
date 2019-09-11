@@ -17,7 +17,10 @@
       <link>/publication/liu2019netembgrabetta/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       <guid>/publication/liu2019netembgrabetta/</guid>
-      <description></description>
+      <description>&lt;!--- use this for adding a citation link
+links = [{name = &#34;Citations: 5&#34;, url = &#34;https://scholar.google.co.jp/scholar?oi=bibs&amp;hl=en&amp;cites=17716096700891183511&#34;}]
+--&gt;
+</description>
     </item>
     
   </channel>
