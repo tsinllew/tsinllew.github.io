@@ -1,1 +1,1 @@
-Sitemap: https://staff.aist.go.jp/xin.liu/sitemap.xml
+Sitemap: tsinllew/tsinllew.github.io/sitemap.xml
