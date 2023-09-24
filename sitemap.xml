@@ -1,106 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>/authors/xin-liu/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/liu2019netembgrabetta/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/chatchawan-kotarasu/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/chenyi-zhuang/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/kyoung-sook-kim/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/tsuyoshi-murata/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/junjin-choong/</loc>
-    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/choong2018communityvae/</loc>
-    <lastmod>2018-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/liucommunitybeyondattribute/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/ken-wakita/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/liulpamplus/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-  </url>
-  
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/portfolio/portfolio-1/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/portfolio/portfolio-2/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/contact/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/join/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/news/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/people/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/publication/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/service/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/software/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/markdown_generator/</loc>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/files/AI%20%E6%88%A6%E7%95%A5%202019.pdf</loc>
+<lastmod>2020-05-04T14:05:54+09:00</lastmod>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/files/test.pdf</loc>
+<lastmod>2020-07-20T15:27:54+09:00</lastmod>
+</url>
+<url>
+<loc>https://staff.aist.go.jp/xin.liu/talkmap/map.html</loc>
+<lastmod>2019-06-17T07:33:04+09:00</lastmod>
+</url>
 </urlset>
