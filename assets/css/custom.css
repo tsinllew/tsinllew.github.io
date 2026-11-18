@@ -1,0 +1,21 @@
+/* === Custom list style for News page only === */
+.page__content ul.news-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;   /* 靠左 */
+}
+
+.page__content ul.news-list > li {
+  position: relative;
+  margin: 0.3em 0;
+  padding-left: 1.3em; /* 点与文字的间距 */
+}
+
+.page__content ul.news-list > li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1.2;
+  font-weight: 700;
+}

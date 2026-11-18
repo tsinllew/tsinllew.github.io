@@ -1,0 +1,6219 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+<title>発表論文 | TsinGraph</title>
+
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="TsinGraph">
+<meta property="og:title" content="発表論文">
+
+
+  <link rel="canonical" href="http://localhost:4000/xin.liu/ja/publication/">
+  <meta property="og:url" content="http://localhost:4000/xin.liu/ja/publication/">
+
+
+
+  <meta property="og:description" content="発表論文">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Xin Liu ...",
+      "url" : "http://localhost:4000/xin.liu",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/xin.liu/feed.xml"
+      type="application/atom+xml"
+      rel="alternate"
+      title="TsinGraph Feed">
+
+<!-- Mobile meta -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className =
+    document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- Theme main CSS（带时间戳避免缓存） -->
+<link rel="stylesheet"
+      href="/xin.liu/assets/css/main.css?v=1794286915">
+
+<!-- 预连接 CDN（提升外链字体/CSS加载性能） -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+<!-- Font Awesome 5（仅一份，覆盖主题自带旧版） -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css?v=1"
+      crossorigin="anonymous">
+
+<!-- 覆盖样式（包含 Academicons 内联字体与图标修正） -->
+<link rel="stylesheet"
+      href="/xin.liu/assets/css/overrides.css?v=1794286915">
+
+<!-- 自定义 head（favicon / MathJax 等） -->
+
+
+
+
+<!-- 禁止 iOS Safari 自动把数字识别为电话 -->
+<!-- publication页面，页码pp会自动加上下划线 -->
+<!-- 这一句只是禁止电话加下划线 <meta name="format-detection" content="telephone=no">  -->
+<!-- 下面这一句把电话，地址，email自动识别加下划线全部关闭 -->
+<meta name="format-detection" content="telephone=no, address=no, email=no, url=no">
+
+
+
+<!-- start custom head snippets -->
+
+<!-- ==== Custom Favicon ==== -->
+<link rel="icon" type="image/png"
+      sizes="96x96"
+      href="/xin.liu/images/favicon/color/favicon-96x96.png" />
+
+<link rel="icon" type="image/svg+xml"
+      href="/xin.liu/images/favicon/color/favicon.svg" />
+
+<link rel="shortcut icon"
+      href="/xin.liu/images/favicon/color/favicon.ico" />
+
+<link rel="apple-touch-icon"
+      sizes="180x180"
+      href="/xin.liu/images/favicon/color/apple-touch-icon.png" />
+
+<meta name="apple-mobile-web-app-title" content="TsinGraph" />
+
+<link rel="manifest"
+      href="/xin.liu/images/favicon/color/site.webmanifest" />
+
+
+
+
+
+<!-- ===== Masthead navigation (bold + active underline) ===== -->
+<style>
+/* 顶部导航栏整体上下间距 */
+.masthead__inner-wrap {
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+/* ===== 导航栏字体统一（让英文 & 日文粗细一致） ===== */
+.masthead .greedy-nav .visible-links > li > a {
+  font-weight: 900 !important;     
+  font-size: 1.1rem !important;
+  padding-top: 0.15rem;
+  padding-bottom: 0.20rem;
+
+  /* 关键：菜单栏统一字体，不影响其他区域 */
+  font-family: "Noto Sans Display", "Noto Sans CJK JP", sans-serif;
+               sans-serif !important;
+
+  transition: color .15s ease, border-color .15s ease;
+}
+
+
+/* 调整英文和日文导航font size */
+/* 英文导航项：1.1rem */
+.masthead .greedy-nav .visible-links > li > a:lang(en) {
+  font-size: 1.08rem !important;
+}
+
+/* 日文导航项：1.05rem */
+.masthead .greedy-nav .visible-links > li > a:lang(ja) {
+  font-size: 0.95rem !important;
+}
+
+
+
+
+/* 悬停效果：浅灰色下划线 */
+.masthead .greedy-nav .visible-links > li > a:hover {
+  color: #000 !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+/* 当前页：红色下划线（更明显） */
+.masthead .greedy-nav .visible-links > li.masthead__menu-item > a[aria-current="page"],
+.masthead .greedy-nav .visible-links > li.masthead__menu-item.active > a,
+.masthead .greedy-nav .visible-links > li > a.active,
+.masthead .greedy-nav .visible-links > li > a[href="/xin.liu/ja/publication/"] {
+  border-bottom: 2px solid #a00 !important;
+  color: #111 !important;
+}
+</style>
+
+<style>
+/* ----------------------------------------------------------
+   给导航栏中的日本国旗图标添加外框（PC + 手机 + iPad 通用）
+   Minimal Mistakes 的导航在不同设备上会把菜单项放在：
+     - .visible-links（桌面端）
+     - .hidden-links（移动端折叠菜单）
+   因此需要同时匹配这两个容器中的 flag-jp 图标
+---------------------------------------------------------- */
+
+/* 匹配 src 中包含 "flag-jp" 的国旗图标（桌面端 + 移动端） */
+.masthead .greedy-nav .visible-links img[src*="flag-jp"],
+.masthead .greedy-nav .hidden-links  img[src*="flag-jp"],
+
+/* 匹配以 "jp.svg" 结尾的图标（桌面端 + 移动端） */
+.masthead .greedy-nav .visible-links img[src$="jp.svg"],
+.masthead .greedy-nav .hidden-links  img[src$="jp.svg"] {
+
+  /* 外框：浅灰色边框 */
+  border: 1px solid #ccc;
+
+  /* 无圆角（与国旗的长方形更协调） */
+  border-radius: 0px;
+
+  /* 让边框与红丸不紧贴，保持视觉均衡 */
+  padding: 1px;
+
+  /* 避免 padding 影响图标本身大小 */
+  background: white;
+  box-sizing: content-box;
+}
+</style>
+
+
+
+
+
+
+<style>
+/* === Sidebar icon + text perfect alignment (Grid) === */
+
+/* 列表整体 */
+.author__urls-wrapper .author__urls.social-icons li {
+  display: grid !important;
+  grid-template-columns: 1.25em auto; /* 左列=图标宽度，右列=文本 */
+  align-items: center !important;     /* 垂直居中 */
+  column-gap: .5em;
+  line-height: 1.45;
+  margin-bottom: .35em;
+}
+
+/* 图标列：兼容 .fa / .fas / .fa-fw 以及 svg */
+.author__urls-wrapper .author__urls.social-icons li i,
+.author__urls-wrapper .author__urls.social-icons li svg {
+  justify-self: start;
+  align-self: center;
+  width: 1.25em;         /* 固定列宽，等宽更整齐 */
+  height: 1.25em;
+  line-height: 1;
+}
+
+/* 文本列：无论是 <a> 还是 <span> 包 <a> 都同样对齐 */
+.author__urls-wrapper .author__urls.social-icons li a,
+.author__urls-wrapper .author__urls.social-icons li span {
+  align-self: center !important;
+  display: inline-block;
+}
+
+/* 如需更紧凑，可把图标列改窄一点：1.15em 或 1.1em */
+</style>
+
+<style>
+/* 单独调整第一个“location”行的文字位置 */
+.author__urls-wrapper .author__urls.social-icons li.author-location a,
+.author__urls-wrapper .author__urls.social-icons li.author-location span {
+  position: relative;
+  top: 0px; /* 文字整体下移，可在 1~3px 之间微调 */
+}
+</style>
+
+<style>
+/* 单独上调第二行 “Email” 的文字位置 */
+.author__urls-wrapper .author__urls.social-icons li:nth-child(2) a,
+.author__urls-wrapper .author__urls.social-icons li:nth-child(2) span {
+  position: relative;
+  top: -1px;   /* 负值 = 向上，建议范围 -0.5px ～ -2px */
+}
+</style>
+
+<style>
+/* 单独上调最后一行“Researchmap”文字的位置 */
+.author__urls-wrapper .author__urls.social-icons li:last-child a,
+.author__urls-wrapper .author__urls.social-icons li:last-child span {
+  position: relative;
+  top: -2px;   /* 负值=往上，正值=往下；可调 -0.5～-2px */
+}
+</style>
+
+
+
+
+<style>
+/* —— 只作用于 layout--plain 的纯单栏页 —— */
+.layout--plain .page{ margin:0; padding-top:8px; }
+.layout--plain .sidebar, .layout--plain .sidebar__right{ display:none !important; }
+.layout--plain #main, .layout--plain .initial-content{ margin:0 !important; padding:0 !important; float:none !important; }
+
+/* 用“布局属性”对齐，而非 transform：上下看起来是一体 */
+.layout--plain .page__inner-wrap{
+  box-sizing: border-box;
+  /* 由脚本写入的变量；默认兜底值 */
+  --menu-left: 24px;
+  --right-gap: 24px;
+  margin-left: var(--menu-left);
+  max-width: calc(100vw - var(--menu-left) - var(--right-gap));
+  padding-left: 0; padding-right: 0;
+  transition: margin-left 120ms ease, max-width 120ms ease;
+}
+
+/* 正文媒体自适应 */
+.layout--plain .page__content{ max-width:none !important; }
+.layout--plain .page__content img{ display:block; max-width:100%; height:auto; margin:0 auto; }
+.layout--plain .page__content figure{ margin-left:auto; margin-right:auto; }
+</style>
+
+<script>
+(function(){
+  // —— 不使用任何类名：只看 <header> 里的可见 <a>，取同一“菜单行”里最靠左的一个 —— //
+  function getHeaderEl(){
+    // 首选文档第一个 <header>；若你的主题没有，就退而求其次用 document.body
+    return document.querySelector('header') || document.body;
+  }
+
+  function visibleRect(el){
+    const r = el.getBoundingClientRect();
+    return (r.width > 0 && r.height > 0) ? r : null;
+  }
+
+  function getMenuStartLeft(){
+    const header = getHeaderEl();
+    if (!header) return null;
+
+    // 只在 header 内找可见链接
+    const anchors = Array.from(header.querySelectorAll('a[href]'))
+      .map(a => ({a, r: visibleRect(a)}))
+      .filter(x => !!x.r);
+
+    if (!anchors.length) return null;
+
+    // 取“最常见的 top 行”（菜单那一行），避免抓到 logo/语言切换等上下不同行的链接
+    // 先按 top 就近聚类（1px 容差）
+    const buckets = new Map();
+    anchors.forEach(({a, r})=>{
+      const t = Math.round(r.top);
+      const key = Array.from(buckets.keys()).find(k => Math.abs(k - t) <= 1) ?? t;
+      if (!buckets.has(key)) buckets.set(key, []);
+      buckets.get(key).push({a, r});
+    });
+    // 选链接数量最多的那一行
+    const [menuTop, list] = Array.from(buckets.entries()).sort((a,b)=>b[1].length - a[1].length)[0];
+
+    // 该行里取最靠左的那个
+    let minLeft = Infinity;
+    list.forEach(({r}) => { if (r.left < minLeft) minLeft = r.left; });
+    return Math.round(minLeft);
+  }
+
+  function applyAlignment(){
+    const wrap = document.querySelector('.layout--plain .page__inner-wrap');
+    if (!wrap) return;
+    const left = getMenuStartLeft();
+    if (left == null) return;
+
+    const RIGHT_GAP = 24; // 右侧留白，只影响右边距，不影响左对齐
+    const maxW = Math.max(0, Math.floor(window.innerWidth - left - RIGHT_GAP));
+
+    wrap.style.setProperty('--menu-left', left + 'px');
+    wrap.style.setProperty('--right-gap', RIGHT_GAP + 'px');
+    // max-width 通过 CSS 用变量计算，不直接写 style.width，避免循环重排
+  }
+
+  // —— 调度：把多次触发合并到下一帧 —— //
+  let raf = null;
+  function schedule(){ if (!raf) raf = requestAnimationFrame(()=>{ raf=null; applyAlignment(); }); }
+
+  // —— 缩放/方向变化后短暂追踪，等待导航完成折叠/展开 —— //
+  function chase(ms){
+    const end = performance.now() + ms;
+    (function tick(){
+      schedule();
+      if (performance.now() < end) requestAnimationFrame(tick);
+    })();
+  }
+
+  // 1) 视口变化
+  window.addEventListener('resize', ()=>{ schedule(); chase(800); }, {passive:true});
+  window.addEventListener('orientationchange', ()=>{ schedule(); chase(800); }, {passive:true});
+
+  // 2) 仅观察 <header> 自身尺寸变化（不看类名，不看属性，防止循环）
+  const header = getHeaderEl();
+  if (header && 'ResizeObserver' in window){
+    new ResizeObserver(()=>{ schedule(); chase(600); }).observe(header);
+  }
+
+  // 3) 初始与字体就绪
+  document.addEventListener('DOMContentLoaded', ()=>{ schedule(); chase(600); }, {once:true});
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(()=>{ schedule(); chase(400); });
+  window.addEventListener('load', ()=>{ schedule(); chase(400); }, {once:true});
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- ====调整右侧汉堡菜单按钮大小==== -->
+<!-- ====调整右侧汉堡菜单按钮大小==== -->
+<!-- ====调整右侧汉堡菜单按钮大小==== -->
+<!-- ====调整右侧汉堡菜单按钮大小==== -->
+<style>
+/* —— 缩小 Minimal Mistakes 默认汉堡图标 —— */
+.greedy-nav .navicon {
+  transform: scale(0.6);   /* 0.75 倍大小，安全 */
+  transform-origin: center;
+}
+</style>
+
+
+
+
+
+
+
+
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+
+
+<!--  ===== 旧方案开始：模糊背景图 =====
+      ===== 旧方案开始：模糊背景图 =====
+	  ===== 旧方案开始：模糊背景图 =====
+	  ===== 旧方案开始：模糊背景图 =====
+<style>
+/* ===== 统一页面主宽度（只控制正文，导航对齐交给主题） ================= */
+.initial-content {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 小屏幕时正文左右 padding 略小一点 */
+@media (max-width: 640px) {
+  .initial-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* ===== 顶部 Logo 条（模糊背景图 + 文案两行） ================= */
+.site-hero-banner {
+  position: relative;              /* 给 ::before 当定位参照 */
+  width: 100%;
+  height: 60px;                    /* 条带厚度，想再薄可调成 70 / 60 */
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;                /* 避免模糊后边缘露出来 */
+  text-align: left !important;     /* 防止主题里有居中样式干扰 */
+}
+
+/* 背景：图像 + 半透明白蒙版 + 轻微模糊 */
+.site-hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.6),    /* 最后一个数值0.75表示白色蒙版，数值越大可以显著降低花纹干扰，太大了会全白 */
+      rgba(255,255,255,0.6)
+    ),
+    url("/xin.liu/images/header-bg/network-bg3.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  filter: blur(5px) ;               /* 5px 为模糊度，越大越模糊 */
+  transform: scale(1.02);          /* 避免模糊导致边缘透白 */
+  z-index: 0;
+}
+
+/* 文字容器：与导航左对齐，垂直居中 */
+.site-branding-wrap {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;             /* 垂直居中 */
+  justify-content: flex-start;     /* 水平左对齐 */
+  padding: 0 0 0 18px;             /* 左边距，根据喜好微调 */
+}
+
+/* 文案整体容器：两行之间保持很紧的行距 */
+.lab-tagline {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;                        /* 行间距很小，显得紧凑 */
+  margin: 0;
+}
+
+/* 主标题行 */
+.lab-line1 {
+  font-weight: 700;
+  font-size: 1.28rem;
+  color: #222222;
+  letter-spacing: -0.2px;    /* Apple 的轻微紧排 */
+}
+
+
+
+/* 副标题行 */
+.lab-line1 {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #1e1e1e;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+
+
+/* ===== 小屏幕适配 ===== */
+@media (max-width: 640px) {
+  .site-branding-wrap {
+    padding-left: 12px;
+  }
+  .lab-line1 {
+    font-size: 1.05rem;
+    white-space: normal;
+  }
+  .lab-line2 {
+    font-size: 0.9rem;
+    white-space: normal;
+  }
+  .lab-tagline {
+    gap: 1px;
+  }
+}
+</style>
+-->
+
+
+
+
+
+
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!--  ===== 新方案：Logo图+纯色背景 =====
+      ===== 新方案：Logo图+纯色背景 =====
+	  ===== 新方案：Logo图+纯色背景 =====
+	  ===== 新方案：Logo图+纯色背景 =====   -->
+<style>
+/* ===== 页面主宽度限制（保持你的原设置） ================= */
+.initial-content {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 小屏适配 */
+@media (max-width: 640px) {
+  .initial-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* ===== 顶部区域：纯浅灰 + 图标 + 两行文字（方案 A） ===== */
+.site-hero-banner {
+  width: 100%;
+  background-color: #f0f0f0;      /* 浅灰背景 */
+  border-bottom: 1px solid #e5e5e5;
+  /* height: 85px;   ← 先把固定高度干掉（或注释掉）*/     /* 条带厚度，想再薄可调成 70 / 60 */
+}
+
+/* 与导航同一条左边线：沿用 masthead__inner-wrap */
+.site-hero-banner .site-branding-wrap {
+  display: flex;
+  align-items: center;            /* 垂直居中 */
+  justify-content: flex-start;    /* 水平左对齐 */
+  padding: 6px 6px;             /* 上下留一点空 + 和内容区对齐 */
+  gap: 20px;                      /* 图标和文字之间的间距 */
+}
+
+/* 图标：比两行文字略高一点 */
+.lab-logo {
+  flex: 0 0 auto;
+  width: 80px;                    /* 图标尺寸，你可以在 44–56 之间微调 */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lab-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* 文案整体容器：两行紧凑排列 */
+.lab-tagline {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;                       /* 两行之间非常小的间距 */
+  margin: 0;
+}
+
+/* 主标题行 */
+.lab-line1 {
+  font-weight: 900;
+  font-size: 1.40rem;
+  color: #222222;
+  letter-spacing: -0.2px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+/* 副标题行：略小 + 斜体 */
+.lab-line2 {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #444444;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* 小屏适配：同时调字号 + 高度 */
+  @media (max-width: 640px) {
+    .site-hero-banner {
+      height: auto;          /* 让高度由内容决定，去掉底部那块空白 */
+      padding-top: 4px;      /* 视情况再加一点上下 padding */
+      padding-bottom: 4px;
+    }
+
+    .site-hero-banner .site-branding-wrap {
+      padding-left: 12px;
+      padding-right: 12px;
+      gap: 8px;
+    }
+
+    .lab-logo {
+      width: 60px;
+      height: 60px;
+    }
+
+    /* 把手机端标题再放大一点 */
+    .lab-line1 {
+      font-size: 1.2rem;    /* 原来 1.05rem，太小了 */
+      white-space: normal;
+    }
+
+    .lab-line2 {
+      font-size: 1.1rem;     /* 原来 0.85rem，略小 */
+      white-space: normal;
+    }
+}
+</style>
+
+<style>
+/* —— 只作用于 layout--plain 的纯单栏页 —— */
+.layout--plain .page{ margin:0; padding-top:8px; }
+.layout--plain .sidebar, .layout--plain .sidebar__right{ display:none !important; }
+.layout--plain #main, .layout--plain .initial-content{ margin:0 !important; padding:0 !important; float:none !important; }
+
+/* 用“布局属性”对齐，而非 transform：上下看起来是一体 */
+.layout--plain .page__inner-wrap{
+  box-sizing: border-box;
+  --menu-left: 24px;
+  --right-gap: 24px;
+  margin-left: var(--menu-left);
+  max-width: calc(100vw - var(--menu-left) - var(--right-gap));
+  padding-left: 0; padding-right: 0;
+  transition: margin-left 120ms ease, max-width 120ms ease;
+}
+
+/* 正文媒体自适应 */
+.layout--plain .page__content{ max-width:none !important; }
+.layout--plain .page__content img{ display:block; max-width:100%; height:auto; margin:0 auto; }
+.layout--plain .page__content figure{ margin-left:auto; margin-right:auto; }
+</style>
+
+
+
+
+
+<style>
+/* —— 只作用于 layout--plain 的纯单栏页 —— */
+.layout--plain .page{ margin:0; padding-top:8px; }
+.layout--plain .sidebar, .layout--plain .sidebar__right{ display:none !important; }
+.layout--plain #main, .layout--plain .initial-content{ margin:0 !important; padding:0 !important; float:none !important; }
+
+/* 用“布局属性”对齐，而非 transform：上下看起来是一体 */
+.layout--plain .page__inner-wrap{
+  box-sizing: border-box;
+  --menu-left: 24px;
+  --right-gap: 24px;
+  margin-left: var(--menu-left);
+  max-width: calc(100vw - var(--menu-left) - var(--right-gap));
+  padding-left: 0; padding-right: 0;
+  transition: margin-left 120ms ease, max-width 120ms ease;
+}
+
+/* 正文媒体自适应 */
+.layout--plain .page__content{ max-width:none !important; }
+.layout--plain .page__content img{ display:block; max-width:100%; height:auto; margin:0 auto; }
+.layout--plain .page__content figure{ margin-left:auto; margin-right:auto; }
+</style>
+
+
+
+<meta http-equiv="cleartype" content="on">
+
+
+
+
+
+
+
+<!-- 用一小段 JS，使得从新网页打开链接 -->
+<!-- 只要域名不是你自己网站的，就会 自动在新窗口打开 -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // 选中所有 http/https 开头的链接
+  var links = document.querySelectorAll('a[href^="http"]');
+
+  links.forEach(function (a) {
+    // 只对外部链接生效，站内同域名不动
+    try {
+      var url = new URL(a.href, window.location.origin);
+      if (url.hostname !== window.location.hostname) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener');
+      }
+    } catch (e) {
+      // 万一 URL 解析失败就忽略
+    }
+  });
+});
+</script>
+    
+
+
+
+<!-- 禁止 iOS Safari 自动把数字识别为电话 -->
+<!-- publication页面，页码pp会自动加上下划线 -->
+<!-- 这一句只是禁止电话加下划线 <meta name="format-detection" content="telephone=no">  -->
+<!-- 下面这一句把电话，地址，email自动识别加下划线全部关闭 -->
+<meta name="format-detection" content="telephone=no, address=no, email=no, url=no">
+
+
+
+<!-- start custom head snippets -->
+
+<!-- ==== Custom Favicon ==== -->
+<link rel="icon" type="image/png"
+      sizes="96x96"
+      href="/xin.liu/images/favicon/color/favicon-96x96.png" />
+
+<link rel="icon" type="image/svg+xml"
+      href="/xin.liu/images/favicon/color/favicon.svg" />
+
+<link rel="shortcut icon"
+      href="/xin.liu/images/favicon/color/favicon.ico" />
+
+<link rel="apple-touch-icon"
+      sizes="180x180"
+      href="/xin.liu/images/favicon/color/apple-touch-icon.png" />
+
+<meta name="apple-mobile-web-app-title" content="TsinGraph" />
+
+<link rel="manifest"
+      href="/xin.liu/images/favicon/color/site.webmanifest" />
+
+
+
+
+
+<!-- ===== Masthead navigation (bold + active underline) ===== -->
+<style>
+/* 顶部导航栏整体上下间距 */
+.masthead__inner-wrap {
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+/* ===== 导航栏字体统一（让英文 & 日文粗细一致） ===== */
+.masthead .greedy-nav .visible-links > li > a {
+  font-weight: 900 !important;     
+  font-size: 1.1rem !important;
+  padding-top: 0.15rem;
+  padding-bottom: 0.20rem;
+
+  /* 关键：菜单栏统一字体，不影响其他区域 */
+  font-family: "Noto Sans Display", "Noto Sans CJK JP", sans-serif;
+               sans-serif !important;
+
+  transition: color .15s ease, border-color .15s ease;
+}
+
+
+/* 调整英文和日文导航font size */
+/* 英文导航项：1.1rem */
+.masthead .greedy-nav .visible-links > li > a:lang(en) {
+  font-size: 1.08rem !important;
+}
+
+/* 日文导航项：1.05rem */
+.masthead .greedy-nav .visible-links > li > a:lang(ja) {
+  font-size: 0.95rem !important;
+}
+
+
+
+
+/* 悬停效果：浅灰色下划线 */
+.masthead .greedy-nav .visible-links > li > a:hover {
+  color: #000 !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+/* 当前页：红色下划线（更明显） */
+.masthead .greedy-nav .visible-links > li.masthead__menu-item > a[aria-current="page"],
+.masthead .greedy-nav .visible-links > li.masthead__menu-item.active > a,
+.masthead .greedy-nav .visible-links > li > a.active,
+.masthead .greedy-nav .visible-links > li > a[href="/xin.liu/ja/publication/"] {
+  border-bottom: 2px solid #a00 !important;
+  color: #111 !important;
+}
+</style>
+
+<style>
+/* ----------------------------------------------------------
+   给导航栏中的日本国旗图标添加外框（PC + 手机 + iPad 通用）
+   Minimal Mistakes 的导航在不同设备上会把菜单项放在：
+     - .visible-links（桌面端）
+     - .hidden-links（移动端折叠菜单）
+   因此需要同时匹配这两个容器中的 flag-jp 图标
+---------------------------------------------------------- */
+
+/* 匹配 src 中包含 "flag-jp" 的国旗图标（桌面端 + 移动端） */
+.masthead .greedy-nav .visible-links img[src*="flag-jp"],
+.masthead .greedy-nav .hidden-links  img[src*="flag-jp"],
+
+/* 匹配以 "jp.svg" 结尾的图标（桌面端 + 移动端） */
+.masthead .greedy-nav .visible-links img[src$="jp.svg"],
+.masthead .greedy-nav .hidden-links  img[src$="jp.svg"] {
+
+  /* 外框：浅灰色边框 */
+  border: 1px solid #ccc;
+
+  /* 无圆角（与国旗的长方形更协调） */
+  border-radius: 0px;
+
+  /* 让边框与红丸不紧贴，保持视觉均衡 */
+  padding: 1px;
+
+  /* 避免 padding 影响图标本身大小 */
+  background: white;
+  box-sizing: content-box;
+}
+</style>
+
+
+
+
+
+
+<style>
+/* === Sidebar icon + text perfect alignment (Grid) === */
+
+/* 列表整体 */
+.author__urls-wrapper .author__urls.social-icons li {
+  display: grid !important;
+  grid-template-columns: 1.25em auto; /* 左列=图标宽度，右列=文本 */
+  align-items: center !important;     /* 垂直居中 */
+  column-gap: .5em;
+  line-height: 1.45;
+  margin-bottom: .35em;
+}
+
+/* 图标列：兼容 .fa / .fas / .fa-fw 以及 svg */
+.author__urls-wrapper .author__urls.social-icons li i,
+.author__urls-wrapper .author__urls.social-icons li svg {
+  justify-self: start;
+  align-self: center;
+  width: 1.25em;         /* 固定列宽，等宽更整齐 */
+  height: 1.25em;
+  line-height: 1;
+}
+
+/* 文本列：无论是 <a> 还是 <span> 包 <a> 都同样对齐 */
+.author__urls-wrapper .author__urls.social-icons li a,
+.author__urls-wrapper .author__urls.social-icons li span {
+  align-self: center !important;
+  display: inline-block;
+}
+
+/* 如需更紧凑，可把图标列改窄一点：1.15em 或 1.1em */
+</style>
+
+<style>
+/* 单独调整第一个“location”行的文字位置 */
+.author__urls-wrapper .author__urls.social-icons li.author-location a,
+.author__urls-wrapper .author__urls.social-icons li.author-location span {
+  position: relative;
+  top: 0px; /* 文字整体下移，可在 1~3px 之间微调 */
+}
+</style>
+
+<style>
+/* 单独上调第二行 “Email” 的文字位置 */
+.author__urls-wrapper .author__urls.social-icons li:nth-child(2) a,
+.author__urls-wrapper .author__urls.social-icons li:nth-child(2) span {
+  position: relative;
+  top: -1px;   /* 负值 = 向上，建议范围 -0.5px ～ -2px */
+}
+</style>
+
+<style>
+/* 单独上调最后一行“Researchmap”文字的位置 */
+.author__urls-wrapper .author__urls.social-icons li:last-child a,
+.author__urls-wrapper .author__urls.social-icons li:last-child span {
+  position: relative;
+  top: -2px;   /* 负值=往上，正值=往下；可调 -0.5～-2px */
+}
+</style>
+
+
+
+
+<style>
+/* —— 只作用于 layout--plain 的纯单栏页 —— */
+.layout--plain .page{ margin:0; padding-top:8px; }
+.layout--plain .sidebar, .layout--plain .sidebar__right{ display:none !important; }
+.layout--plain #main, .layout--plain .initial-content{ margin:0 !important; padding:0 !important; float:none !important; }
+
+/* 用“布局属性”对齐，而非 transform：上下看起来是一体 */
+.layout--plain .page__inner-wrap{
+  box-sizing: border-box;
+  /* 由脚本写入的变量；默认兜底值 */
+  --menu-left: 24px;
+  --right-gap: 24px;
+  margin-left: var(--menu-left);
+  max-width: calc(100vw - var(--menu-left) - var(--right-gap));
+  padding-left: 0; padding-right: 0;
+  transition: margin-left 120ms ease, max-width 120ms ease;
+}
+
+/* 正文媒体自适应 */
+.layout--plain .page__content{ max-width:none !important; }
+.layout--plain .page__content img{ display:block; max-width:100%; height:auto; margin:0 auto; }
+.layout--plain .page__content figure{ margin-left:auto; margin-right:auto; }
+</style>
+
+<script>
+(function(){
+  // —— 不使用任何类名：只看 <header> 里的可见 <a>，取同一“菜单行”里最靠左的一个 —— //
+  function getHeaderEl(){
+    // 首选文档第一个 <header>；若你的主题没有，就退而求其次用 document.body
+    return document.querySelector('header') || document.body;
+  }
+
+  function visibleRect(el){
+    const r = el.getBoundingClientRect();
+    return (r.width > 0 && r.height > 0) ? r : null;
+  }
+
+  function getMenuStartLeft(){
+    const header = getHeaderEl();
+    if (!header) return null;
+
+    // 只在 header 内找可见链接
+    const anchors = Array.from(header.querySelectorAll('a[href]'))
+      .map(a => ({a, r: visibleRect(a)}))
+      .filter(x => !!x.r);
+
+    if (!anchors.length) return null;
+
+    // 取“最常见的 top 行”（菜单那一行），避免抓到 logo/语言切换等上下不同行的链接
+    // 先按 top 就近聚类（1px 容差）
+    const buckets = new Map();
+    anchors.forEach(({a, r})=>{
+      const t = Math.round(r.top);
+      const key = Array.from(buckets.keys()).find(k => Math.abs(k - t) <= 1) ?? t;
+      if (!buckets.has(key)) buckets.set(key, []);
+      buckets.get(key).push({a, r});
+    });
+    // 选链接数量最多的那一行
+    const [menuTop, list] = Array.from(buckets.entries()).sort((a,b)=>b[1].length - a[1].length)[0];
+
+    // 该行里取最靠左的那个
+    let minLeft = Infinity;
+    list.forEach(({r}) => { if (r.left < minLeft) minLeft = r.left; });
+    return Math.round(minLeft);
+  }
+
+  function applyAlignment(){
+    const wrap = document.querySelector('.layout--plain .page__inner-wrap');
+    if (!wrap) return;
+    const left = getMenuStartLeft();
+    if (left == null) return;
+
+    const RIGHT_GAP = 24; // 右侧留白，只影响右边距，不影响左对齐
+    const maxW = Math.max(0, Math.floor(window.innerWidth - left - RIGHT_GAP));
+
+    wrap.style.setProperty('--menu-left', left + 'px');
+    wrap.style.setProperty('--right-gap', RIGHT_GAP + 'px');
+    // max-width 通过 CSS 用变量计算，不直接写 style.width，避免循环重排
+  }
+
+  // —— 调度：把多次触发合并到下一帧 —— //
+  let raf = null;
+  function schedule(){ if (!raf) raf = requestAnimationFrame(()=>{ raf=null; applyAlignment(); }); }
+
+  // —— 缩放/方向变化后短暂追踪，等待导航完成折叠/展开 —— //
+  function chase(ms){
+    const end = performance.now() + ms;
+    (function tick(){
+      schedule();
+      if (performance.now() < end) requestAnimationFrame(tick);
+    })();
+  }
+
+  // 1) 视口变化
+  window.addEventListener('resize', ()=>{ schedule(); chase(800); }, {passive:true});
+  window.addEventListener('orientationchange', ()=>{ schedule(); chase(800); }, {passive:true});
+
+  // 2) 仅观察 <header> 自身尺寸变化（不看类名，不看属性，防止循环）
+  const header = getHeaderEl();
+  if (header && 'ResizeObserver' in window){
+    new ResizeObserver(()=>{ schedule(); chase(600); }).observe(header);
+  }
+
+  // 3) 初始与字体就绪
+  document.addEventListener('DOMContentLoaded', ()=>{ schedule(); chase(600); }, {once:true});
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(()=>{ schedule(); chase(400); });
+  window.addEventListener('load', ()=>{ schedule(); chase(400); }, {once:true});
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- ====调整右侧汉堡菜单按钮大小==== -->
+<!-- ====调整右侧汉堡菜单按钮大小==== -->
+<!-- ====调整右侧汉堡菜单按钮大小==== -->
+<!-- ====调整右侧汉堡菜单按钮大小==== -->
+<style>
+/* —— 缩小 Minimal Mistakes 默认汉堡图标 —— */
+.greedy-nav .navicon {
+  transform: scale(0.6);   /* 0.75 倍大小，安全 */
+  transform-origin: center;
+}
+</style>
+
+
+
+
+
+
+
+
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+
+
+<!--  ===== 旧方案开始：模糊背景图 =====
+      ===== 旧方案开始：模糊背景图 =====
+	  ===== 旧方案开始：模糊背景图 =====
+	  ===== 旧方案开始：模糊背景图 =====
+<style>
+/* ===== 统一页面主宽度（只控制正文，导航对齐交给主题） ================= */
+.initial-content {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 小屏幕时正文左右 padding 略小一点 */
+@media (max-width: 640px) {
+  .initial-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* ===== 顶部 Logo 条（模糊背景图 + 文案两行） ================= */
+.site-hero-banner {
+  position: relative;              /* 给 ::before 当定位参照 */
+  width: 100%;
+  height: 60px;                    /* 条带厚度，想再薄可调成 70 / 60 */
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;                /* 避免模糊后边缘露出来 */
+  text-align: left !important;     /* 防止主题里有居中样式干扰 */
+}
+
+/* 背景：图像 + 半透明白蒙版 + 轻微模糊 */
+.site-hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.6),    /* 最后一个数值0.75表示白色蒙版，数值越大可以显著降低花纹干扰，太大了会全白 */
+      rgba(255,255,255,0.6)
+    ),
+    url("/xin.liu/images/header-bg/network-bg3.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  filter: blur(5px) ;               /* 5px 为模糊度，越大越模糊 */
+  transform: scale(1.02);          /* 避免模糊导致边缘透白 */
+  z-index: 0;
+}
+
+/* 文字容器：与导航左对齐，垂直居中 */
+.site-branding-wrap {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;             /* 垂直居中 */
+  justify-content: flex-start;     /* 水平左对齐 */
+  padding: 0 0 0 18px;             /* 左边距，根据喜好微调 */
+}
+
+/* 文案整体容器：两行之间保持很紧的行距 */
+.lab-tagline {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;                        /* 行间距很小，显得紧凑 */
+  margin: 0;
+}
+
+/* 主标题行 */
+.lab-line1 {
+  font-weight: 700;
+  font-size: 1.28rem;
+  color: #222222;
+  letter-spacing: -0.2px;    /* Apple 的轻微紧排 */
+}
+
+
+
+/* 副标题行 */
+.lab-line1 {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #1e1e1e;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+
+
+/* ===== 小屏幕适配 ===== */
+@media (max-width: 640px) {
+  .site-branding-wrap {
+    padding-left: 12px;
+  }
+  .lab-line1 {
+    font-size: 1.05rem;
+    white-space: normal;
+  }
+  .lab-line2 {
+    font-size: 0.9rem;
+    white-space: normal;
+  }
+  .lab-tagline {
+    gap: 1px;
+  }
+}
+</style>
+-->
+
+
+
+
+
+
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!--  ===== 新方案：Logo图+纯色背景 =====
+      ===== 新方案：Logo图+纯色背景 =====
+	  ===== 新方案：Logo图+纯色背景 =====
+	  ===== 新方案：Logo图+纯色背景 =====   -->
+<style>
+/* ===== 页面主宽度限制（保持你的原设置） ================= */
+.initial-content {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 小屏适配 */
+@media (max-width: 640px) {
+  .initial-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* ===== 顶部区域：纯浅灰 + 图标 + 两行文字（方案 A） ===== */
+.site-hero-banner {
+  width: 100%;
+  background-color: #f0f0f0;      /* 浅灰背景 */
+  border-bottom: 1px solid #e5e5e5;
+  /* height: 85px;   ← 先把固定高度干掉（或注释掉）*/     /* 条带厚度，想再薄可调成 70 / 60 */
+}
+
+/* 与导航同一条左边线：沿用 masthead__inner-wrap */
+.site-hero-banner .site-branding-wrap {
+  display: flex;
+  align-items: center;            /* 垂直居中 */
+  justify-content: flex-start;    /* 水平左对齐 */
+  padding: 6px 6px;             /* 上下留一点空 + 和内容区对齐 */
+  gap: 20px;                      /* 图标和文字之间的间距 */
+}
+
+/* 图标：比两行文字略高一点 */
+.lab-logo {
+  flex: 0 0 auto;
+  width: 80px;                    /* 图标尺寸，你可以在 44–56 之间微调 */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lab-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* 文案整体容器：两行紧凑排列 */
+.lab-tagline {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;                       /* 两行之间非常小的间距 */
+  margin: 0;
+}
+
+/* 主标题行 */
+.lab-line1 {
+  font-weight: 900;
+  font-size: 1.40rem;
+  color: #222222;
+  letter-spacing: -0.2px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+/* 副标题行：略小 + 斜体 */
+.lab-line2 {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #444444;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* 小屏适配：同时调字号 + 高度 */
+  @media (max-width: 640px) {
+    .site-hero-banner {
+      height: auto;          /* 让高度由内容决定，去掉底部那块空白 */
+      padding-top: 4px;      /* 视情况再加一点上下 padding */
+      padding-bottom: 4px;
+    }
+
+    .site-hero-banner .site-branding-wrap {
+      padding-left: 12px;
+      padding-right: 12px;
+      gap: 8px;
+    }
+
+    .lab-logo {
+      width: 60px;
+      height: 60px;
+    }
+
+    /* 把手机端标题再放大一点 */
+    .lab-line1 {
+      font-size: 1.2rem;    /* 原来 1.05rem，太小了 */
+      white-space: normal;
+    }
+
+    .lab-line2 {
+      font-size: 1.1rem;     /* 原来 0.85rem，略小 */
+      white-space: normal;
+    }
+}
+</style>
+
+<style>
+/* —— 只作用于 layout--plain 的纯单栏页 —— */
+.layout--plain .page{ margin:0; padding-top:8px; }
+.layout--plain .sidebar, .layout--plain .sidebar__right{ display:none !important; }
+.layout--plain #main, .layout--plain .initial-content{ margin:0 !important; padding:0 !important; float:none !important; }
+
+/* 用“布局属性”对齐，而非 transform：上下看起来是一体 */
+.layout--plain .page__inner-wrap{
+  box-sizing: border-box;
+  --menu-left: 24px;
+  --right-gap: 24px;
+  margin-left: var(--menu-left);
+  max-width: calc(100vw - var(--menu-left) - var(--right-gap));
+  padding-left: 0; padding-right: 0;
+  transition: margin-left 120ms ease, max-width 120ms ease;
+}
+
+/* 正文媒体自适应 */
+.layout--plain .page__content{ max-width:none !important; }
+.layout--plain .page__content img{ display:block; max-width:100%; height:auto; margin:0 auto; }
+.layout--plain .page__content figure{ margin-left:auto; margin-right:auto; }
+</style>
+
+
+
+
+
+<style>
+/* —— 只作用于 layout--plain 的纯单栏页 —— */
+.layout--plain .page{ margin:0; padding-top:8px; }
+.layout--plain .sidebar, .layout--plain .sidebar__right{ display:none !important; }
+.layout--plain #main, .layout--plain .initial-content{ margin:0 !important; padding:0 !important; float:none !important; }
+
+/* 用“布局属性”对齐，而非 transform：上下看起来是一体 */
+.layout--plain .page__inner-wrap{
+  box-sizing: border-box;
+  --menu-left: 24px;
+  --right-gap: 24px;
+  margin-left: var(--menu-left);
+  max-width: calc(100vw - var(--menu-left) - var(--right-gap));
+  padding-left: 0; padding-right: 0;
+  transition: margin-left 120ms ease, max-width 120ms ease;
+}
+
+/* 正文媒体自适应 */
+.layout--plain .page__content{ max-width:none !important; }
+.layout--plain .page__content img{ display:block; max-width:100%; height:auto; margin:0 auto; }
+.layout--plain .page__content figure{ margin-left:auto; margin-right:auto; }
+</style>
+
+
+  </head>
+	
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ====== 实现Navigation上面的Logo + TsinGraph ===== -->
+<!-- ================= 这里是定义功能 ================= --><!--  ===== 旧方案开始：模糊背景图 (没有Logo图)=====   -->
+<!--
+<div class="site-hero-banner">
+  <div class="masthead__inner-wrap site-branding-wrap">
+    <div class="lab-tagline">
+      <span class="lab-line1">TsinGraph: Graph-Driven AI Technologies</span>
+      <span class="lab-line2">Graphs serve as a universal, cross-disciplinary language for complex data</span>
+    </div>
+  </div>
+</div>
+-->
+
+
+<!--  ===== 新方案：Logo图+纯色背景 =====   --><div class="site-hero-banner">
+  <div class="masthead__inner-wrap site-branding-wrap">
+    <div class="lab-logo">
+      <img src="/xin.liu/images/favicon/Logo/logo_1.svg" alt="TsinGraph logo">
+    </div>
+    <p class="lab-tagline">
+      <span class="lab-line1">Develop Graph-Driven AI Technologies</span>
+      <span class="lab-line2">Graphs serve as a universal, cross-disciplinary language for modeling complex systems</span>
+    </p>
+  </div>
+</div><div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+
+        <ul class="visible-links">
+            
+            
+
+            <li class="masthead__menu-item">
+              <a href="/xin.liu/ja/">ホーム</a>
+              
+            </li>
+            
+            
+
+            <li class="masthead__menu-item">
+              <a href="/xin.liu/ja/news/">ニュース</a>
+              
+            </li>
+            
+            
+
+            <li class="masthead__menu-item">
+              <a href="/xin.liu/ja/research/">研究内容</a>
+              
+            </li>
+            
+            
+
+            <li class="masthead__menu-item">
+              <a href="/xin.liu/ja/people/">メンバー</a>
+              
+            </li>
+            
+            
+
+            <li class="masthead__menu-item">
+              <a href="/xin.liu/ja/publication/">発表論文</a>
+              
+            </li>
+            
+            
+
+            <li class="masthead__menu-item">
+              <a href="/xin.liu/ja/software/">ソフトウェア</a>
+              
+            </li>
+            
+            
+
+            <li class="masthead__menu-item">
+              <a href="/xin.liu/ja/service/">学会活動</a>
+              
+            </li>
+            
+            
+
+            <li class="masthead__menu-item">
+              <a href="/xin.liu/ja/join/">メンバー募集</a>
+              
+            </li>
+            
+            
+
+            <li class="masthead__menu-item">
+              <a href="/xin.liu/ja/contact/">連絡先</a>
+              
+            </li>
+            
+            
+              <li class="masthead__menu-item">
+            <a href="javascript:void(0)" id="lang-switch" style="display:flex;align-items:center;gap:6px;">
+              <span>
+                English
+              </span>
+              <img src="/xin.liu/images/flag-uk.svg"
+                   style="height:16px;width:auto;display:inline-block;">
+            </a>
+          </li>
+        </ul>
+
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+(function () {
+  // Build i18nIndex from Liquid-generated array
+  var i18nList = "[{\"key\":\"contact\",\"lang\":\"ja\",\"url\":\"/ja/contact/\"},{\"key\":\"contact\",\"lang\":\"en\",\"url\":\"/contact/\"},{\"key\":\"home\",\"lang\":\"ja\",\"url\":\"/ja/\"},{\"key\":\"join\",\"lang\":\"ja\",\"url\":\"/ja/join/\"},{\"key\":\"join\",\"lang\":\"en\",\"url\":\"/join/\"},{\"key\":\"news\",\"lang\":\"ja\",\"url\":\"/ja/news/\"},{\"key\":\"news\",\"lang\":\"en\",\"url\":\"/news/\"},{\"key\":\"people\",\"lang\":\"ja\",\"url\":\"/ja/people/\"},{\"key\":\"people\",\"lang\":\"en\",\"url\":\"/people/\"},{\"key\":\"publication\",\"lang\":\"en\",\"url\":\"/publication/\"},{\"key\":\"publication\",\"lang\":\"ja\",\"url\":\"/ja/publication/\"},{\"key\":\"publication\",\"lang\":\"ja\",\"url\":\"/ja/publication/\"},{\"key\":\"publication\",\"lang\":\"en\",\"url\":\"/publication/\"},{\"key\":\"research\",\"lang\":\"ja\",\"url\":\"/ja/research/\"},{\"key\":\"research\",\"lang\":\"en\",\"url\":\"/research/\"},{\"key\":\"service\",\"lang\":\"ja\",\"url\":\"/ja/service/\"},{\"key\":\"service\",\"lang\":\"en\",\"url\":\"/service/\"},{\"key\":\"software\",\"lang\":\"ja\",\"url\":\"/ja/software/\"},{\"key\":\"software\",\"lang\":\"en\",\"url\":\"/software/\"},]";
+  var i18nIndex = {};
+  try {
+    i18nList.forEach(function(item) {
+      var key = item.key, lang = item.lang, url = item.url;
+      if (!i18nIndex[key]) i18nIndex[key] = {};
+      i18nIndex[key][lang] = url; // stored as site-internal path (no baseurl)
+    });
+  } catch (e) {}
+
+  var btn = document.getElementById('lang-switch');
+  if (!btn) return;
+
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Normalize baseurl to no trailing slash ('' or '/xin.liu')
+    var baseurl = "/xin.liu";
+    if (baseurl && baseurl !== "/" && baseurl.endsWith("/")) baseurl = baseurl.slice(0, -1);
+
+    // Current full path, e.g. '/xin.liu/ja/contact/'
+    var fullPath = window.location.pathname || "/";
+
+    // 1) Strip baseurl to get site-internal path
+    var sitePath = fullPath;
+    if (baseurl && sitePath.indexOf(baseurl) === 0) {
+      sitePath = sitePath.slice(baseurl.length) || "/";
+    }
+
+    // Determine current/target language
+    var curKey = "publication";
+    var curLang = "ja";
+    var targetLang = (curLang === 'ja' ? 'en' : 'ja');
+
+    // 2) Use i18n_key mapping if available (these URLs are site-internal)
+    var targetPath = null;
+    if (curKey && i18nIndex[curKey] && i18nIndex[curKey][targetLang]) {
+      targetPath = i18nIndex[curKey][targetLang]; // like '/ja/contact/' or '/contact/'
+    }
+
+    // 3) Fallback: toggle '/ja' prefix on site-internal path
+    if (!targetPath) {
+      if (!sitePath.startsWith("/")) sitePath = "/" + sitePath;
+
+      if (targetLang === "ja") {
+        // en -> ja
+        if (sitePath === "/" || sitePath === "") {
+          targetPath = "/ja/";
+        } else if (sitePath.indexOf("/ja/") === 0 || sitePath === "/ja") {
+          targetPath = sitePath; // already ja
+        } else {
+          targetPath = "/ja" + sitePath; // '/contact/' -> '/ja/contact/'
+        }
+      } else {
+        // ja -> en
+        if (sitePath === "/ja" || sitePath === "/ja/") {
+          targetPath = "/";
+        } else if (sitePath.indexOf("/ja/") === 0) {
+          targetPath = sitePath.replace(/^\/ja(\/|$)/, "/");
+        } else {
+          targetPath = sitePath; // already en
+        }
+      }
+    }
+
+    // 4) Build final path (only path; do NOT touch origin/protocol)
+    var finalPath = ((baseurl || "") + (targetPath || "/"))
+      .replace(/\/{2,}/g, "/");  // collapse duplicate slashes safely in path only
+
+    if (!finalPath.startsWith("/")) finalPath = "/" + finalPath;
+
+    // 5) Navigate by setting pathname ONLY (prevents duplicating origin)
+    window.location.pathname = finalPath;
+  }, false);
+})();
+</script>
+
+
+
+    <!-- 给 main 一个独有类：page-no-sidebar -->
+<main id="main" class="page-no-sidebar">
+  <!-- 把 page.classes 插入到 page 的 class 中 -->
+  <div class="page pubpage">
+    <div class="page__inner-wrap">
+      
+        <h1 class="page__title">発表論文</h1>
+      
+      <div class="page__content">
+        
+<div class="pubs pubs-ja">
+
+  <div class="pubs-header">
+    <!-- ===== 年ナビゲーション ===== -->
+    <nav class="year-nav" aria-label="Years">
+      
+        
+        
+          <a class="chip" href="#y2026">2026年</a>
+        
+      
+        
+        
+          <a class="chip" href="#y2025">2025年</a>
+        
+      
+        
+        
+          <a class="chip" href="#y2024">2024年</a>
+        
+      
+        
+        
+          <a class="chip" href="#y2023">2023年</a>
+        
+      
+        
+        
+          <a class="chip" href="#y2022">2022年</a>
+        
+      
+        
+        
+          <a class="chip" href="#y2021">2021年</a>
+        
+      
+        
+        
+          <a class="chip" href="#y2020">2020年</a>
+        
+      
+        
+        
+          <a class="chip" href="#y2019">2019年</a>
+        
+      
+        
+        
+          <a class="chip" href="#y2018">2018年</a>
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+      <a class="chip" href="#before_y2017">〜2017年</a>
+    </nav>
+
+    <!-- 横线：永远贴在导航条下面，对齐英文版 -->
+    <div class="pubs-divider"></div>
+  </div>
+
+  <div class="pubs-body">
+
+    <!-- ===== 2018年以降 ===== -->
+    
+      
+      
+
+        <div style="height:0.35em;"></div>
+        <div id="y2026" class="pubs-year">2026年</div>
+
+        <div class="pubs-list">
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Evaluating LLMs on Large-Scale Graph Property Estimation via Random Walks</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Sunil Kumar Maurya and <strong>Xin Liu</strong>
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ACL 2026</span>, pp.39749–39777 <a href="https://aclanthology.org/2026.acl-long.1846/" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Rethinking GNNs and Missing Features: Challenges, Evaluation and a Robust Solution</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Francesco Ferrini, Veronica Lachi, Antonio Longa, Bruno Lepri, Akiyoshi Matono, Andrea Passerini, <strong>Xin Liu</strong>, and Manfred Jaeger
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICML 2026</span>, vol.306, pp.30897-30935 <a href="https://openreview.net/forum?id=E4gftzjqoh" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Degree-Mass Message Passing for Betweenness Ranking in Directed and Undirected Networks</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Justin Dachille, Aurora Rossi, Sunil Kumar Maurya, Frederik Mallmann-Trenn, <strong>Xin Liu</strong>, Frédéric Giroire, Tsuyoshi Murata, and Emanuele Natale
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of CIKM 2026</span>, pp.885-896 <a href="https://dl.acm.org/doi/10.1145/3799682.3840622" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">ScaffoldRangeDiff: Text-Conditioned Molecular Graph Diffusion with Exact Scaffold Preservation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Rikuto Takeuchi, <strong>Xin Liu</strong>, Akiyoshi Matono, Chen Li, and Tadahiko Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of IEEE BigData 2026</span> (採択済み)
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Lite-DRTG: A Lightweight Diffusion-based Trajectory Generation for Real-Time Mapless Navigation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Jeonghun Lee, Taehoon Kim, Kyoung-Sook Kim, and <strong>Xin Liu</strong>
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of DASFAA 2026</span> <a href="https://doi.org/10.1007/978-981-92-0375-8_22" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">KMM: Learnable Dual-Stream Time Encoding for Continuous-Time Dynamic Graphs</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Peeradon Sarnkaew, Natthawut Kertkeidkachorn, <strong>Xin Liu</strong>, and Naruemon Pratanwanich
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of PAKDD 2026</span> <a href="https://doi.org/10.1007/978-981-92-1947-6_23" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">How Universal is Spectral Filtering for Recommendation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Shaowen Peng, Kazunari Sugiyama, <strong>Xin Liu</strong>, and Tsunenori Mine
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">ACM Transactions on Information Systems</span>, 2026 (採択済み)
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Cross-Modal Hyperedge Alignment for Knowledge Graph Augmented Recommendation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yun Liu, <strong>Xin Liu</strong>, Yijun Duan, Ziqiang Li, Ryutaro Ichise, Akiyoshi Matono, and Qiang Ma
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Knowledge-Based Systems</span>, vol.349, 116491, 2026 <a href="https://doi.org/10.1016/j.knosys.2026.116491" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Event-Centric Human Value Understanding in News-Domain Texts: An Actor-Conditioned Benchmark Across Multi-Scope Event Contexts</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yao Wang, <strong>Xin Liu</strong>, Zhuochen Liu, Jiankang Chen, Adam Jatowt, Kyoung-Sook Kim, Noriko Kando, and Hai-Tao Yu
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Information Processing &amp; Management</span>, vol.64, 105144, 2026 <a href="https://doi.org/10.1016/j.ipm.2026.105144" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">A Multi-Rounded Adversarial Scenario for Graph-based Promo Fraud Detection</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Hafizh Adi Prasetya, <strong>Xin Liu</strong>, Tsuyoshi Murata, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Social Network Analysis and Mining</span>, vol.16, article 24, 2026 <a href="https://doi.org/10.1007/s13278-025-01566-0" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Enhancing the Effective Receptive Field of a U-Net-based CNN for Road Marking Segmentation from Mechanical Spinning Mobile LiDAR-Derived Imagery</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Miguel Luis Rivera Lagahit, <strong>Xin Liu</strong>, Haoyi Xiu, Taehoon Kim, Kyoung-Sook Kim, and Masashi Matsuoka
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>, vol.19, pp.27069-27091, 2026 <a href="https://doi.org/10.1109/JSTARS.2026.3716325" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Scientific Impact Prediction via Virtual Geography Hawkes Process</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Babusurya Ganeshbabu, <strong>Xin Liu</strong>, Akiyoshi Matono, Kyoung-Sook Kim, and Xun Shen
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Applied Sciences</span>, vol.16, no.4, 2085, 2026 <a href="https://doi.org/10.3390/app16042085" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Semantic-driven and Rule-based Noise Detection and Refinement in Knowledge Graphs using Large Language Models</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Na Dong, Natthawut Kertkeidkachorn, <strong>Xin Liu</strong>, and Kiyoaki Shirai
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">IEICE Transactions on Information and Systems</span>, 2026 <a href="https://doi.org/10.1587/transinf.2025EDP7162" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        </div>
+      
+    
+      
+      
+
+        <div style="height:0.35em;"></div>
+        <div id="y2025" class="pubs-year">2025年</div>
+
+        <div class="pubs-list">
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">GeSubNet: Gene Interaction Inference for Disease Subtype Network Generation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Ziwei Yang, Zheng Chen, <strong>Xin Liu</strong>, Rikuto Kotoge, Peng Chen, Yasuko Matsubara, Yasushi Sakurai, and Jimeng Sun
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICLR 2025</span> (Oral) <a href="https://openreview.net/forum?id=ja4rpheN2n" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Oldie but Goodie: Re-illuminating Label Propagation on Graphs with Partially Observed Features</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Sukwon Yun, <strong>Xin Liu</strong>, Yunhak Oh, Junseok Lee, Tianlong Chen, Tsuyoshi Murata, and Chanyoung Park
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of KDD 2025</span>, pp.3704-3715 <a href="https://doi.org/10.1145/3711896.3737067" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">How Useful Is Graph Pooling for Node-Level Tasks?</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Steven Lynden, Akiyoshi Matono, and Qiang Ma
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ECML-PKDD 2025</span>, pp.92-107 <a href="https://doi.org/10.1007/978-3-032-06066-2_6" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Exploring the Potential of Pre-Trained Language Models in Long-Term Semantic Scene Change Prediction using Variable Scene Graphs</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Haoyi Xiu, <strong>Xin Liu</strong>, Taehoon Kim, and Kyoung-Sook Kim
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of CIKM 2025</span>, pp.5371-5375 (Short Paper) <a href="https://dl.acm.org/doi/10.1145/3746252.3760897" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Balancing Embedding Spectrum for Recommendation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Shaowen Peng, Kazunari Sugiyama, <strong>Xin Liu</strong>, and Tsunenori Mine
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">ACM Transactions on Recommender Systems</span>, vol.3, article 56, 2025 <a href="https://doi.org/10.1145/3718488" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Weight-Aware Tasks for Evaluating Knowledge Graph Embeddings</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Weikun Kong, <strong>Xin Liu</strong>, Teeradaj Racharak, Guanqun Sun, Qiang Ma, and Minh Le Nguyen
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Knowledge-Based Systems</span>, vol.320, 113596, 2025 <a href="https://doi.org/10.1016/j.knosys.2025.113596" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Memory Augmented using Diffusion Model for Class-Incremental Learning</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Quentin Jodelet, <strong>Xin Liu</strong>, Phua Yin Jun, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Image and Vision Computing</span>, vol.161, 105600, 2025 <a href="https://doi.org/10.1016/j.imavis.2025.105600" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Estimating the Plausibility of Commonsense Statements by Novelly Fusing Large Language Model and Graph Neural Network</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Hai-Tao Yu, Chao Lei, Yan Ge, Yijun Duan, <strong>Xin Liu</strong>, Steven Lynden, Kyoung-Sook Kim, Akiyoshi Matono, and Adam Jatowt
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Information Processing &amp; Management</span>, vol.62, 104146, 2025 <a href="https://doi.org/10.1016/j.ipm.2025.104146" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Implicit Knowledge-Augmented Prompting for Commonsense Explanation Generation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yan Ge, Hai-Tao Yu, Chao Lei, <strong>Xin Liu</strong>, Adam Jatowt, Kyoung-Sook Kim, Steven Lynden, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Knowledge and Information Systems</span>, vol.67, pp.3663-3698, 2025 <a href="https://doi.org/10.1007/s10115-024-02326-w" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Antimicrobial Resistance Recommendations via Electronic Health Records with Graph Representation and Patient Population Modeling</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Pei Gao, Zheng Chen, <strong>Xin Liu</strong>, Peng Chen, Yasuko Matsubara, and Yasushi Sakurai
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Computer Methods and Programs in Biomedicine</span>, vol.261, 108616, 2025 <a href="https://doi.org/10.1016/j.cmpb.2025.108616" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">A General and Scalable GCN Training Framework on CPU Supercomputers</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Chen Zhuang, Peng Chen, <strong>Xin Liu</strong>, Rio Yokota, Nikoli Dryden, Lingqi Zhang, Toshio Endo, Satoshi Matsuoka, and Mohamed Wahib
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of PPoPP 2025</span>, pp.566-568 (Poster) <a href="https://doi.org/10.1145/3710848.3710860" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Future-Proofing Class-Incremental Learning</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Quentin Jodelet, <strong>Xin Liu</strong>, Phua Yin Jun, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Machine Vision and Applications</span>, vol.36, article 16, 2025 <a href="https://doi.org/10.1007/s00138-024-01635-y" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Scaling Large-Scale GNN Training to Thousands of Processors on CPU-based Supercomputers</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Chen Zhuang, Lingqi Zhang, Du Wu, Peng Chen, Jiajun Huang, <strong>Xin Liu</strong>, Rio Yokota, Nikoli Dryden, Toshio Endo, Satoshi Matsuoka, and Mohamed Wahib
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICS 2025</span>, pp.57-72 <a href="https://doi.org/10.1145/3721145.3730422" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Action Sequence Analysis using Temporal Commonsense Knowledge</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Steven Lynden, Kyoung-Sook Kim, Akiyoshi Matono, Hai-Tao Yu, and <strong>Xin Liu</strong>
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of PAKDD 2025</span>, pp.355-367 <a href="https://doi.org/10.1007/978-981-96-8295-9_26" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Evaluating Segmentation Performance of Learnable Resized Models on Small Features from Sparse Point Cloud-Derived Imagery</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Miguel Luis Rivera Lagahit, <strong>Xin Liu</strong>, Haoyi Xiu, Taehoon Kim, Kyoung-Sook Kim, and Masashi Matsuoka
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of IGARSS 2025</span>, pp.8033-8037 <a href="https://doi.org/10.1109/IGARSS55030.2025.11242434" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">DIFFRPTraj: Diffusion-based Realistic Pedestrian Trajectory Generation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Taehoon Kim, Kyoung-Sook Kim, Haoyi Xiu, and <strong>Xin Liu</strong>
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of IGARSS 2025</span>, pp.3329-3333 <a href="https://doi.org/10.1109/IGARSS55030.2025.11242860" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Customizing Masked Autoencoders For Self-Supervised Learning On Airborne LiDAR Point Clouds</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Haoyi Xiu, <strong>Xin Liu</strong>, Taehoon Kim, and Kyoung-Sook Kim
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of IGARSS 2025</span>, pp.1649-1653 <a href="https://doi.org/10.1109/IGARSS55030.2025.11243149" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Label Distribution Learning on Subgraphs</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Steven Lynden, Akiyoshi Matono, and Qiang Ma
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of AMLDS 2025</span>, pp.208-211 (最優秀論文賞) <a href="https://doi.org/10.1109/AMLDS63918.2025.11159399" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">GMIML: Graph Multi-Instance Multi-Label Learning</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Steven Lynden, Akiyoshi Matono, and Qiang Ma
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of GCCE 2025</span>, pp.705-708 (口頭発表賞) <a href="https://doi.org/10.1109/GCCE65946.2025.11274871" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Advancing ALS Applications with Large-Scale Pre-Training: Framework, Dataset, and Downstream Assessment</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Haoyi Xiu, <strong>Xin Liu</strong>, Taehoon Kim, and Kyoung-Sook Kim
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Remote Sensing</span>, vol.17, 1859, 2025 <a href="https://doi.org/10.3390/rs17111859" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Molecular Structure Learning with Graph Transformers: A Graph Reduction Approach for Improved Efficiency and Accuracy</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Sarah Fadlallah, Carme Julià, Francesc Serratosa, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of PRML 2025</span>, pp.411-415 <a href="https://doi.org/10.1109/PRML66062.2025.11159676" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">DIFF²RPTraj: Diffusion-based Generation of Realistic Pedestrian Trajectories using Coordinate Differences</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Taehoon Kim, <strong>Xin Liu</strong>, and Kyoung-Sook Kim
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of SIGSPATIAL 2025 Workshops</span>, pp.72-81 <a href="https://doi.org/10.1145/3764926.3771949" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">JNLP at SemEval-2025 Task 11: Cross-Lingual Multi-Label Emotion Detection using Generative Models</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Jieying Xue, Phuong Minh Nguyen, Minh Le Nguyen, and <strong>Xin Liu</strong>
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ACL 2025 Workshops</span>, pp.20-27 (タスク別最優秀システム賞) <a href="https://aclanthology.org/2025.semeval-1.4" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Refining Noisy Knowledge Graph with Large Language Models</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Na Dong, Natthawut Kertkeidkachorn, <strong>Xin Liu</strong>, and Kiyoaki Shirai
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of COLING 2025 Workshops</span>, pp.78-86 (最優秀論文賞) <a href="https://aclanthology.org/2025.genaik-1.9" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        </div>
+      
+    
+      
+      
+
+        <div style="height:0.35em;"></div>
+        <div id="y2024" class="pubs-year">2024年</div>
+
+        <div class="pubs-list">
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">How Powerful is Graph Filtering for Recommendation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Shaowen Peng, <strong>Xin Liu</strong>, Kazunari Sugiyama, and Tsunenori Mine
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of KDD 2024</span>, pp.2388-2399 <a href="https://doi.org/10.1145/3637528.3671789" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">S3PaR: Section-based Sequential Scientific Paper Recommendation for Paper Writing Assistance</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Natasha Christabelle Santosa, <strong>Xin Liu</strong>, Hyoil Han, and Jun Miyazaki
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Knowledge-Based Systems</span>, vol.303, 112437, 2024 <a href="https://doi.org/10.1016/j.knosys.2024.112437" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Inexact Graph Representation Learning</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Adam Jatowt, Hai-Tao Yu, Steven Lynden, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of IJCNN 2024</span> <a href="https://doi.org/10.1109/IJCNN60899.2024.10649995" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">DEGNN: Dual Experts Graph Neural Network Handling Both Edge and Node Feature Noise</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Tai Hasegawa, Sukwon Yun, <strong>Xin Liu</strong>, Yin Jun Phua, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of PAKDD 2024</span>, pp.376-389 <a href="https://doi.org/10.1007/978-981-97-2253-2_30" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Learnable Resized and Laplacian-Filtered U-Net: Better Road Marking Extraction and Classification on Sparse-Point-Cloud-Derived Imagery</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Miguel Luis Rivera Lagahit, <strong>Xin Liu</strong>, Haoyi Xiu, Taehoon Kim, Kyoung-Sook Kim, and Masashi Matsuoka
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Remote Sensing</span>, vol.16, 4592, 2024 <a href="https://doi.org/10.3390/rs16234592" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Communication Optimization for Distributed GCN Training on ABCI Supercomputer</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Chen Zhuang, Peng Chen, <strong>Xin Liu</strong>, Toshio Endo, Satoshi Matsuoka, and Mohamed Wahib
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of The 2024 IEEE International Conference on Cluster Computing Workshops</span>, pp.160-161 <a href="https://doi.org/10.1109/CLUSTERWorkshops61563.2024.00038" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">A Decoupling and Aggregating Framework for Joint Extraction of Entities and Relations</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yao Wang, <strong>Xin Liu</strong>, Weikun Kong, Hai-Tao Yu, Teeradaj Racharak, Kyoung-Sook Kim, and Minh Le Nguyen
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">IEEE Access</span>, vol.12, pp.103313–103328, 2024 <a href="https://doi.org/10.1109/ACCESS.2024.3420877" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Predicting Popularity Trend in Social Media Networks with Multi-Layer Temporal Graph Neural Networks</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Ruidong Jin, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Complex &amp; Intelligent Systems</span>, vol.10, pp.4713–4729, 2024 <a href="https://doi.org/10.1007/s40747-024-01402-6" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        </div>
+      
+    
+      
+      
+
+        <div style="height:0.35em;"></div>
+        <div id="y2023" class="pubs-year">2023年</div>
+
+        <div class="pubs-list">
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Predicting Potential Real-Time Donations in YouTube Live Streaming Services via Continuous-Time Dynamic Graphs</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Ruidong Jin, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Machine Learning</span>, vol.113, pp.2093–2127, 2023 <a href="https://doi.org/10.1007/s10994-023-06449-z" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">MSECNet: Accurate and Robust Normal Estimation for 3D Point Clouds by Multi-Scale Edge Conditioning</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Haoyi Xiu, <strong>Xin Liu</strong>, Weimin Wang, Kyoung-Sook Kim, and Masashi Matsuoka
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ACM MM 2023</span>, pp.2535-2543 <a href="https://doi.org/10.1145/3581783.3613762" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">What Wikipedia Misses about Yuriko Nakamura? Predicting Missing Biography Content by Learning Latent Life Patterns</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Adam Jatowt, Chenyi Zhuang, Hai-Tao Yu, Steven Lynden, Kyoung-Sook Kim, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ECAI 2023</span>, pp.583-589 <a href="https://doi.org/10.3233/FAIA230319" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Diffusion Unit: Interpretable Edge Enhancement and Suppression Learning for 3D Point Cloud Segmentation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Haoyi Xiu, <strong>Xin Liu</strong>, Weimin Wang, Kyoung-Sook Kim, Takayuki Shinohara, Qiong Chang, and Masashi Matsuoka
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Neurocomputing</span>, vol.559, 126780, 2023 <a href="https://doi.org/10.1016/j.neucom.2023.126780" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Class-Incremental Learning using Diffusion Model for Distillation and Replay</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Quentin Jodelet, <strong>Xin Liu</strong>, Phua Yin Jun, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICCV 2023 Workshops</span>, pp.3417-3425 (最優秀論文賞) <a href="https://doi.org/10.1109/ICCVW60793.2023.00367" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Commonsense Temporal Action Knowledge (CoTAK) Dataset</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Steven Lynden, Hailemariam Mehari, Kyoung-Sook Kim, Adam Jatowt, Akiyoshi Matono, Hai-Tao Yu, <strong>Xin Liu</strong>, and Yijun Duan
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of CIKM 2023</span>, pp.5361–5365 (Short Paper) <a href="https://dl.acm.org/doi/10.1145/3583780.3615114" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Feature Selection: Key to Enhance Node Classification with Graph Neural Networks</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Sunil Kumar Maurya, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">CAAI Transactions on Intelligence Technology</span>, vol.8, pp.14-28, 2023 <a href="https://doi.org/10.1049/cit2.12166" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">StereoVAE: A Lightweight Stereo-Matching System using Embedded GPUs</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Qiong Chang, Xiang Li, Xin Xu, <strong>Xin Liu</strong>, Yun Li, and Jun Miyazaki
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICRA 2023</span>, pp.1982-1988 <a href="https://doi.org/10.1109/ICRA48891.2023.10160441" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">DS-Net: A Dedicated Approach for Collapsed Building Detection from Post-Event Airborne Point Clouds</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Haoyi Xiu, <strong>Xin Liu</strong>, Weimin Wang, Kyoung-Sook Kim, Takayuki Shinohara, Qiong Chang, and Masashi Matsuoka
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">International Journal of Applied Earth Observation and Geoinformation</span>, vol.116, 103150, 2023 <a href="https://doi.org/10.1016/j.jag.2022.103150" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">QSD-LSTM: Vessel Trajectory Prediction using Long Short-Term Memory with Quaternion Ship Domain</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Ryan Wen Liu, Kunlin Hu, Maohan Liang, Yan Li, <strong>Xin Liu</strong>, and Dong Yang
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Applied Ocean Research</span>, vol.136, 103592, 2023 <a href="https://doi.org/10.1016/j.apor.2023.103592" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Optimizing Local Feature Representations of 3D Point Clouds with Anisotropic Edge Modeling</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Haoyi Xiu, <strong>Xin Liu</strong>, Weimin Wang, Kyoung-Sook Kim, Takayuki Shinohara, Qiong Chang, and Masashi Matsuoka
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of MMM 2023</span>, pp.269-281 <a href="https://doi.org/10.1007/978-3-031-27077-2_21" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">WeExt: A Framework of Extending Deterministic Knowledge Graph Embedding Models for Embedding Weighted Knowledge Graphs</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Weikun Kong, <strong>Xin Liu</strong>, Teeradaj Racharak, Guanqun Sun, Jianan Chen, Qiang Ma, and Minh Le Nguyen
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">IEEE Access</span>, vol.11, pp.48901-48911, 2023 <a href="https://doi.org/10.1109/ACCESS.2023.3276319" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        </div>
+      
+    
+      
+      
+
+        <div style="height:0.35em;"></div>
+        <div id="y2022" class="pubs-year">2022年</div>
+
+        <div class="pubs-list">
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Heterogeneous Graph Embedding with Single-Level Aggregation and Infomax Encoding</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Nuttapong Chairatanakul, <strong>Xin Liu</strong>, Nguyen Thai Hoang, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Machine Learning</span>, vol.112, pp.4227–4256, 2022 <a href="https://doi.org/10.1007/s10994-022-06160-5" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Anonymity Can Help Minority: A Novel Synthetic Data Over-Sampling Strategy on Multi-Label Graphs</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Adam Jatowt, Hai-Tao Yu, Steven Lynden, Kyoung-Sook Kim, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ECML-PKDD 2022</span>, pp.20-36 <a href="https://doi.org/10.1007/978-3-031-26390-3_2" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Balanced Softmax Cross-Entropy for Incremental Learning with and without Memory</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Quentin Jodelet, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Computer Vision and Image Understanding</span>, vol.225, 103582, 2022 <a href="https://doi.org/10.1016/j.cviu.2022.103582" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Leaping Through Time with Gradient-based Adaptation for Recommendation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Nuttapong Chairatanakul, Nguyen Thai Hoang, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of AAAI 2022</span>, pp.6141-6149 <a href="https://doi.org/10.1609/aaai.v36i6.20562" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Dual Cost-Sensitive Graph Convolutional Network Learning for Imbalanced Graph Node Classification</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Adam Jatowt, Hai-Tao Yu, Steven Lynden, Kyoung-Sook Kim, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of IJCNN 2022</span> <a href="https://doi.org/10.1109/IJCNN55064.2022.9892598" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Not All Neighbors are Friendly: Learning to Choose Hop Features to Improve Node Classification</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Sunil Kumar Maurya, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of CIKM 2022</span>, pp.4334-4338 (Short Paper) <a href="https://doi.org/10.1145/3511808.3557543" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">TransHExt: A Weighted Extension for TransH on Weighted Knowledge Graph Embedding</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Weikun Kong, <strong>Xin Liu</strong>, Teeradaj Racharak, and Minh Le Nguyen
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ISWC 2022</span>, vol.3254, paper 387 (Poster) <a href="https://ceur-ws.org/Vol-3254/paper387.pdf" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Predicting Potential Real-Time Donations in YouTube Live Streaming Services via Continuous-Time Dynamic Graph</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Ruidong Jin, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of DS 2022</span>, pp.59-73 <a href="https://doi.org/10.1007/978-3-031-18840-4_5" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Strengthening Robustness under Adversarial Attacks using Brain Visual Codes</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Zarina Rakhimberdina, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">IEEE Access</span>, vol.10, pp.96149-96158, 2022 <a href="https://doi.org/10.1109/ACCESS.2022.3204995" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Multiview Actionable Knowledge Graph Generation From Wikipedia Biographies</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Adam Jatowt, Chenyi Zhuang, Hai-Tao Yu, Steven Lynden, Kyoung-Sook Kim, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">IEEE Access</span>, vol.10, pp.73879-73892, 2022 <a href="https://doi.org/10.1109/ACCESS.2022.3189769" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">SORAG: Synthetic Data Over-Sampling Strategy on Multi-Label Graphs</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Adam Jatowt, Hai-Tao Yu, Steven Lynden, Kyoung-Sook Kim, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Remote Sensing</span>, vol.14, 4479, 2022 <a href="https://doi.org/10.3390/rs14184479" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Long-Tailed Graph Representation Learning via Dual Cost-Sensitive Graph Convolutional Network</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, <strong>Xin Liu</strong>, Adam Jatowt, Hai-Tao Yu, Steven Lynden, Kyoung-Sook Kim, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Remote Sensing</span>, vol.14, 3295, 2022 <a href="https://doi.org/10.3390/rs14143295" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Efficient Stereo Matching on Embedded GPUs with Zero-Means Cross Correlation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Qiong Chang, Aolong Zha, Weimin Wang, <strong>Xin Liu</strong>, Masaki Onishi, Lei Lei, Meng Joo Er, Tsutomu Maruyama
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Journal of Systems Architecture</span>, vol.123, 102366, 2022 <a href="https://doi.org/10.1016/j.sysarc.2021.102366" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Simplifying Approach to Node Classification in Graph Neural Networks</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Sunil Kumar Maurya, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Journal of Computational Science</span>, vol.62, 101695, 2022 <a href="https://doi.org/10.1016/j.jocs.2022.101695" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Enhancing Citation Recommendation using Citation Network Embedding</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Chanathip Pornprasit, <strong>Xin Liu</strong>, Pattararat Kiattipadungkul, Natthawut Kertkeidkachorn, Kyoung-Sook Kim, Thanapon Noraset, Saeed-Ul Hassan, and Suppawong Tuarob
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Scientometrics</span>, vol.127, pp.233-264, 2022 <a href="https://doi.org/10.1007/s11192-021-04196-3" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        </div>
+      
+    
+      
+      
+
+        <div style="height:0.35em;"></div>
+        <div id="y2021" class="pubs-year">2021年</div>
+
+        <div class="pubs-list">
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Graph Convolutional Networks for Graphs Containing Missing Features</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Hibiki Taguchi, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Future Generation Computer Systems</span>, vol.117, pp.155-168, 2021 <a href="https://doi.org/10.1016/j.future.2020.11.016" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Graph Neural Networks for Fast Node Ranking Approximation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Sunil Kumar Maurya, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">ACM Transactions on Knowledge Discovery from Data</span>, vol.15, no.5, article 78, 2021 <a href="https://doi.org/10.1145/3446217" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">PGRA: Projected Graph Relation-Feature Attention Network for Heterogeneous Information Network Embedding</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Nuttapong Chairatanakul, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Information Sciences</span>, vol.570, pp.769-794, 2021 <a href="https://doi.org/10.1016/j.ins.2021.04.070" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Natural Image Reconstruction from fMRI using Deep Learning: A Survey</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Zarina Rakhimberdina, Quentin Jodelet, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Frontiers in Neuroscience</span>, vol.15, 795488, 2021 <a href="https://doi.org/10.3389/fnins.2021.795488" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Forecasting Ambulance Demand with Profiled Human Mobility via Heterogeneous Multi-Graph Neural Networks</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Zhaonan Wang, Tianqi Xia, Renhe Jiang, <strong>Xin Liu</strong>, Kyoung-Sook Kim, Xuan Song, and Ryosuke Shibasaki
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICDE 2021</span>, pp.1751-1762 <a href="https://doi.org/10.1109/ICDE51399.2021.00154" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Spatio-Temporal-Categorical Graph Neural Networks for Fine-Grained Multi-Incident Co-Prediction</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Zhaonan Wang, Renhe Jiang, Zekun Cai, Zipei Fan, <strong>Xin Liu</strong>, Kyoung-Sook Kim, Xuan Song, and Ryosuke Shibasaki
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of CIKM 2021</span>, pp.2060-2069 <a href="https://doi.org/10.1145/3459637.3482482" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Enhancing Local Feature Learning for 3D Point Cloud Processing using Unary-Pairwise Attention</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Haoyi Xiu, <strong>Xin Liu</strong>, Weimin Wang, Kyoung-Sook Kim, Takayuki Shinohara, Qiong Chang, and Masashi Matsuoka
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of BMVC 2021</span>, article 678 <a href="https://www.bmvc2021-virtualconference.com/assets/papers/0678.pdf" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Cross-Lingual Transfer for Text Classification with Dictionary-based Heterogeneous Graph</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Nuttapong Chairatanakul, Noppayut Sriwatanasakdi, Nontawat Charoenphakdee, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Findings of EMNLP 2021</span>, pp.1504-1517, 2021 <a href="https://doi.org/10.18653/v1/2021.findings-emnlp.130" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Balanced Softmax Cross-Entropy for Incremental Learning</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Quentin Jodelet, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICANN 2021</span>, pp.385-396 <a href="https://doi.org/10.1007/978-3-030-86340-1_31" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Diachronic Linguistic Periodization of Temporal Document Collections for Discovering Evolutionary Word Semantics</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Yijun Duan, Adam Jatowt, Masatoshi Yoshikawa, <strong>Xin Liu</strong>, and Akiyoshi Matono
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICADL 2021</span>, pp.3-17 <a href="https://doi.org/10.1007/978-3-030-91669-5_1" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Predicting Emergency Medical Service Demand with Bipartite Graph Convolutional Networks</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Ruidong Jin, Tianqi Xia, <strong>Xin Liu</strong>, Tsuyoshi Murata, and Kyoung-Sook Kim
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">IEEE Access</span>, vol.9, pp.9903-9915, 2021 <a href="https://doi.org/10.1109/ACCESS.2021.3050607" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">An Unsupervised Learning Method with Convolutional Auto-Encoder for Vessel Trajectory Similarity Computation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Maohan Liang, Wen Liu, Shichen Li, Zhe Xiao, <strong>Xin Liu</strong>, and Feng Lu
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Ocean Engineering</span>, vol.225, 108803, 2021 <a href="https://doi.org/10.1016/j.oceaneng.2021.108803" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Structure-Guided Attributed Network Embedding with ''Centroid'' Enhancement</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Zihan Liao, Wenxin Liang, Beilei Cui, and <strong>Xin Liu</strong>
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Computing</span>, vol.103, pp.1599-1620, 2021 <a href="https://doi.org/10.1007/s00607-021-00916-y" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        </div>
+      
+    
+      
+      
+
+        <div style="height:0.35em;"></div>
+        <div id="y2020" class="pubs-year">2020年</div>
+
+        <div class="pubs-list">
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Towards Temporal Knowledge Graph Embeddings with Arbitrary Time Precision</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Julien Leblay, Melisachew Wudage Chekol, and <strong>Xin Liu</strong>
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of CIKM 2020</span>, pp.685-694 <a href="https://doi.org/10.1145/3340531.3412028" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">ConvCN: A CNN-based Citation Network Embedding Algorithm Towards Citation Recommendation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Chanathip Pornprasit, <strong>Xin Liu</strong>, Natthawut Kertkeidkachorn, Kyoung-Sook Kim, Thanapon Noraset, and Suppawong Tuarob
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of JCDL 2020</span>, pp.433-436 (Short Paper) <a href="https://doi.org/10.1145/3383583.3398609" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">BiMLPA: Community Detection in Bipartite Networks by Multi-Label Propagation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Hibiki Taguchi, Tsuyoshi Murata, and <strong>Xin Liu</strong>
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of NetSci-X 2020</span>, pp.17-31 <a href="https://doi.org/10.1007/978-3-030-38965-9_2" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Population Graph-based Multi-Model Ensemble Method for Diagnosing Autism Spectrum Disorder</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Zarina Rakhimberdina, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Sensors</span>, vol.20, 6001, 2020 <a href="https://doi.org/10.3390/s20216001" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Optimizing Variational Graph Autoencoder for Community Detection with Dual Optimization</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                JunJin Choong, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Entropy</span>, vol.22, no.2, 197, 2020 <a href="https://doi.org/10.3390/e22020197" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Z²-ZNCC: ZigZag Scanning Based Zero-Means Normalized Cross Correlation for Fast and Accurate Stereo Matching on Embedded GPU</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Qiong Chang, Aolong Zha, Weimin Wang, <strong>Xin Liu</strong>, Masaki Onishi, and Tsutomu Maruyama
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICCD 2020</span>, pp.597-600 (Short Paper) <a href="https://doi.org/10.1109/ICCD50377.2020.00104" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">CoolPath: An Application for Recommending Pedestrian Routes with Reduced Heatstroke Risk</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Tianqi Xia, Adam Jatowt, Zhaonan Wang, Ruochen Si, Haoran Zhang, <strong>Xin Liu</strong>, Ryosuke Shibasaki, Xuan Song, and Kyoung-sook Kim
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of W2GIS 2020</span>, pp.14-23 <a href="https://doi.org/10.1007/978-3-030-60952-8_2" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        </div>
+      
+    
+      
+      
+
+        <div style="height:0.35em;"></div>
+        <div id="y2019" class="pubs-year">2019年</div>
+
+        <div class="pubs-list">
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">A General View for Network Embedding as Matrix Factorization</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Tsuyoshi Murata, Kyoung-Sook Kim, Chatchawan Kotarasu, and Chenyi Zhuang
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of WSDM 2019</span>, pp.375-383 <a href="https://doi.org/10.1145/3289600.3291029" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Fast Approximations of Betweenness Centrality with Graph Neural Networks</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Sunil Kumar Maurya, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of CIKM 2019</span>, pp.2149-2152 (Short Paper) <a href="https://doi.org/10.1145/3357384.3358080" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Recurrent Translation-based Network for Top-N Sparse Sequential Recommendation</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Nuttapong Chairatanakul, Tsuyoshi Murata, <strong>Xin Liu</strong>
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">IEEE Access</span>, vol.7, pp.131567-131576, 2019 <a href="https://doi.org/10.1109/ACCESS.2019.2941083" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">How Much Topological Structure is Preserved by Graph Embeddings?</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Chenyi Zhuang, Tsuyoshi Murata, Kyoung-Sook Kim, and Natthawut Kertkeidkachorn
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Computer Science and Information Systems</span>, vol.16, no.2, pp.597-614, 2019 <a href="https://doi.org/10.2298/CSIS181001011L" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Knowledge Representation of G-Protein-Coupled Receptor Signal Transduction Pathways</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Natthawut Kertkeidkachorn, Lihua Zhao, <strong>Xin Liu</strong>, and Ryutaro Ichise
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICSC 2019</span>, pp.324-329 <a href="https://doi.org/10.1109/ICOSC.2019.8665519" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">GTransE: Generalizing Translation-based Model on Uncertain Knowledge Graph Embedding</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                Natthawut Kertkeidkachorn, <strong>Xin Liu</strong>, and Ryutaro Ichise
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of JSAI 2019</span>, pp.170-178 <a href="https://doi.org/10.1007/978-3-030-39878-1_16" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Optimizing Variational Graph Autoencoder for Community Detection</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                JunJin Choong, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of IEEE BigData 2019 Workshops</span>, pp.5353-5358 <a href="https://doi.org/10.1109/BigData47090.2019.9006123" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        </div>
+      
+    
+      
+      
+
+        <div style="height:0.35em;"></div>
+        <div id="y2018" class="pubs-year">2018年</div>
+
+        <div class="pubs-list">
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Learning Community Structure with Variational Autoencoder</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                JunJin Choong, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICDM 2018</span>, pp.69-78 <a href="https://doi.org/10.1109/ICDM.2018.00022" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Network Embedding Based on a Quasi-Local Similarity Measure</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Natthawut Kertkeidkachorn, Tsuyoshi Murata, Kyoung-Sook Kim, Julien Leblay and Steven Lynden
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of PRICAI 2018</span>, pp.429-440 <a href="https://doi.org/10.1007/978-3-319-97304-3_33" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Measuring Graph Reconstruction Precisions: How Well Do Embeddings Preserve the Graph Proximity Structure?</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Tsuyoshi Murata, and Kyoung-Sook Kim
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of WIMS 2018</span>, article 25 <a href="https://doi.org/10.1145/3227609.3227673" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+            
+
+            
+
+            <article class="pub-item">
+
+              <!-- タイトル -->
+              <div class="pub-title">Variational Approach for Learning Community Structures</div>
+
+              <!-- 著者 -->
+              <div class="pub-authors">
+                JunJin Choong, <strong>Xin Liu</strong>, and Tsuyoshi Murata
+
+              </div>
+
+              <!-- venue 行 -->
+              <div class="pub-venue">
+                <span class="venue-it">Complexity</span>, vol.2018, article 4867304, 2018 <a href="https://doi.org/10.1155/2018/4867304" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        </div>
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+
+    <!-- ===== 〜2017年まで ===== -->
+    <div style="height:0.35em;"></div>
+    <div id="before_y2017" class="pubs-year">〜2017年</div>
+
+    <div class="pubs-list">
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Food Sales Prediction with Meteorological Data: A Case Study of a Japanese Chain Supermarket</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong> and Ryutaro Ichise
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of DMBD 2017</span>, pp.93-104 <a href="https://doi.org/10.1007/978-3-319-61845-6_10" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Towards an Aggregator That Exploits Big Data to Bid on Frequency Containment Reserve Market</div>
+
+              <div class="pub-authors">
+                Christian Giovanelli, <strong>Xin Liu</strong>, Seppo Sierla, Valeriy Vyatkin, and Ryutaro Ichise
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of IECON 2017</span>, pp.7514-7519 <a href="https://doi.org/10.1109/IECON.2017.8217316" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        
+      
+        
+        
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Community Detection in Multi-Partite Multi-Relational Networks Based on Information Compression</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Weichu Liu, Tsuyoshi Murata, and Ken Wakita
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">New Generation Computing</span>, vol.34, pp.153-176, 2016 <a href="https://doi.org/10.1007/s00354-016-0206-1" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        
+      
+        
+        
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Detecting Network Communities Beyond Assortativity-Related Attributes</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Tsuyoshi Murata, and Ken Wakita
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Physical Review E</span>, vol.90, 012806, 2014 <a href="https://doi.org/10.1103/PhysRevE.90.012806" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">A Framework for Community Detection in Heterogeneous Multi-Relational Networks</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Weichu Liu, Tsuyoshi Murata, and Ken Wakita
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Advances in Complex Systems</span>, vol.17, no.6, 1450018, 2014 <a href="https://doi.org/10.1142/S0219525914500180" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">A Unified Modularity by Encoding the Similarity Attraction Feature into the Null Model</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Tsuyoshi Murata, and Ken Wakita
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ASONAM 2014</span>, pp.521-528 <a href="https://doi.org/10.1109/ASONAM.2014.6921636" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        
+      
+        
+        
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Extracting the Multilevel Communities Based on Network Structural and Nonstructural Information</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Tsuyoshi Murata, and Ken Wakita
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of WWW 2013</span>, pp.191-192 (Poster) <a href="https://doi.org/10.1145/2487788.2487884" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Community Detection Algorithm Based on Centrality and Node Distance in Scale-Free Networks</div>
+
+              <div class="pub-authors">
+                Sorn Jarukasemratana, Tsuyoshi Murata, and <strong>Xin Liu</strong>
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ACM HyperText 2013</span>, pp.258-262 (Short Paper) <a href="https://doi.org/10.1145/2481492.2481527" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        
+      
+        
+        
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Detecting Communities in K-Partite K-Uniform (Hyper)Networks</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong> and Tsuyoshi Murata
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Journal of Computer Science and Technology</span>, vol.26, no.5, pp.778-791, 2011 <a href="https://doi.org/10.1007/s11390-011-0177-0" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Extracting the Mesoscopic Structure from Heterogeneous Systems</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong> and Tsuyoshi Murata
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ACM HyperText 2011</span>, pp.211-220 <a href="https://doi.org/10.1145/1995966.1995995" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        
+      
+        
+        
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Advanced Modularity-Specialized Label Propagation Algorithm for Detecting Communities in Networks</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong> and Tsuyoshi Murata
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Physica A</span>, vol.389, no.7, pp.1493-1500, 2010 <a href="https://doi.org/10.1016/j.physa.2009.12.019" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">An Efficient Algorithm for Optimizing Bipartite Modularity in Bipartite Networks</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong> and Tsuyoshi Murata
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Journal of Advanced Computational Intelligence and Intelligent Informatics</span>, vol.14, no.4, pp.408-415, 2010 <a href="https://doi.org/10.20965/jaciii.2010.p0408" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Evaluating Community Structure in Bipartite Networks</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong> and Tsuyoshi Murata
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of SocialCom 2010</span>, pp.576-581 <a href="https://doi.org/10.1109/SocialCom.2010.91" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        
+      
+        
+        
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Community Detection in Large-Scale Bipartite Networks</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong> and Tsuyoshi Murata
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of WI 2009</span>, vol.1, pp.50-57 <a href="https://doi.org/10.1109/WI-IAT.2009.15" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">How Does Label Propagation Algorithm Work in Bipartite Networks?</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong> and Tsuyoshi Murata
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of WI 2009 Workshops</span>, pp.5-8 <a href="https://doi.org/10.1109/WI-IAT.2009.217" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        
+      
+        
+        
+          
+
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            <article class="pub-item">
+
+              <div class="pub-title">Effective Algorithm for Detecting Community Structure in Complex Networks based on GA and Clustering</div>
+
+              <div class="pub-authors">
+                <strong>Xin Liu</strong>, Deyi Li, Shuliang Wang, and Zhiwei Tao
+
+              </div>
+
+              <div class="pub-venue">
+                <span class="venue-it">Proceedings of ICCS 2007</span>, pp.657-664 <a href="https://doi.org/10.1007/978-3-540-72586-2_95" class="urlicon" target="_blank" rel="noopener"> </a>
+              </div>
+
+            </article>
+          
+        
+      
+    </div>
+
+    <p align="left" style="margin-top: 2em; font-size: 0.9em;">
+      <a href="#top"><i class="fas fa-angle-double-up"></i> 上へ戻る</a>
+    </p>
+	
+	
+	<br /><br /><br />
+
+  </div><!-- /.pubs-body -->
+
+</div>
+<!-- /.pubs pubs-ja -->
+
+<!-- 英文日文页面使用统一的js -->
+<script src="/xin.liu/assets/js/publication.js"></script>
+
+<!-- 下面是关于每年论文导航的链接定义 -->
+<!-- 这个注释掉
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  
+  // ---- Japanese publication page only ----
+  var pubs    = document.querySelector('.pubs-ja');
+  var pubBody = document.querySelector('.pubs-ja .pubs-body');
+
+  // 如果不是日文 publication 页面，直接退出
+  if (!pubs || !pubBody) {
+    console.warn('Japanese pubs / pubs-body not found');
+    return;
+  }
+
+  var html      = document.documentElement;
+  var body      = document.body;
+  var footer    = document.querySelector('.page__footer');
+  var yearLinks = document.querySelectorAll('.pubs-ja .year-nav .chip[href^="#"]');
+  
+
+  // 1) 只在 publication 页禁用“全局滚动”
+  html.classList.add('pubpage-lock');
+  body.classList.add('pubpage-lock');
+
+  // 2) 计算 1+2 区域总高度，让 3(footer) 永远在下面露出来
+  function resizePubs() {
+    var rect = pubs.getBoundingClientRect();
+    var footerHeight = footer ? footer.offsetHeight : 0;
+    var h = window.innerHeight - rect.top - footerHeight;
+
+    if (h < 120) h = 120;   // 防止极端情况下高度为 0/负数
+
+    pubs.style.height = h + 'px';
+  }
+
+  resizePubs();
+  window.addEventListener('resize', resizePubs);
+
+  // 3) 年份导航：只滚动中间的 pubBody（2 区域）
+  yearLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();   // 不让默认锚点滚整个页面
+      e.stopPropagation();  // 避免被主题其它平滑滚动脚本接管
+
+      var id = this.getAttribute('href').substring(1);
+      var target = document.getElementById(id);
+      if (!target) return;
+
+      // 目标在 pubBody 内部的相对位置
+      // 找到 target 在 pubBody 内部的真实滚动位置
+      function getOffsetInside(element, container) {
+        var offset = 0;
+        while (element && element !== container) {
+          offset += element.offsetTop;
+          element = element.offsetParent;
+        }
+        return offset;
+      }
+
+      // ★你用的其实是这一句，不是 getOffsetInside：
+      var offset = target.offsetTop - pubBody.offsetTop - 4;
+
+      // 不允许负数
+      if (offset < 0) offset = 0;
+
+      pubBody.scrollTo({
+        top: offset,
+        behavior: 'smooth'
+      });
+    }, true);  // ★★★ 捕获阶段执行（最关键）
+  });  
+  
+  // 4) Back to top：把中间的 pubBody 滚回顶部
+  var backToTop = document.querySelector('.pubs-ja a[href="#top"]');
+
+  if (backToTop && pubBody) {
+    backToTop.addEventListener('click', function (e) {
+      e.preventDefault();   // 不让默认锚点去滚整页
+      e.stopPropagation();
+
+      pubBody.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+  
+});
+</script>
+-->
+
+
+      </div>
+    </div>
+  </div>
+</main>
+	
+	<div class="footer">
+      <footer>
+        
+<!--  This code defines “Follow: Feed” at the footer
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/xin.liu/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+-->
+
+
+<!-- defines the style of page__footer-copyright-->
+<!--
+//以下是定义了footer
+//如果删除这一段
+//网页底部就不会出现© 2025 tsinllew. Powered by Jekyll & Minimal Mistakes.
+-->
+<style>
+ .page__footer-copyright {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #f0f0f0;
+	color: #666666;
+	text-align: center;
+}
+</style>
+<div class="page__footer-copyright"> Copyright &copy tsinllew. All rights reserved. </div>
+
+
+<!-- 
+<div class="page__footer-copyright"> Copyright &copy 2026 tsinllew. All rights reserved. </div>
+-->
+
+<!--  This code defines “Powered by Jekyll & Minimal Mistakes.” at the footer
+<div class="page__footer-copyright">&copy; 2026 Xin Liu .... Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+-->
+      </footer>
+    </div>
+	
+    <script src="http://localhost:4000/xin.liu/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

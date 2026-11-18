@@ -1,0 +1,25 @@
+/* ===== Sidebar author links fine-tune ===== */
+.author__urls li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.author__urls i {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+  margin-right: .35rem;
+  position: relative;
+  top: -1.5px; /* 微上提，使图标与文字中心线更对齐 */
+}
+
+/* 针对特定图标再微调 */
+.author__urls i.fa-envelope,
+.author__urls i.fa-graduation-cap,
+.author__urls i.fa-play {
+  top: -2px;
+}
